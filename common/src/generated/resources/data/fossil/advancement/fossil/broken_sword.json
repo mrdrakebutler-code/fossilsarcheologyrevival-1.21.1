@@ -1,0 +1,44 @@
+{
+  "parent": "fossil:fossil/root",
+  "criteria": {
+    "broken_helmet": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fossil:broken_helmet"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "broken_sword": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fossil:broken_sword"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.fossil.broken_sword.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "fossil:broken_sword"
+    },
+    "title": {
+      "translate": "advancements.fossil.broken_sword.title"
+    }
+  },
+  "requirements": [
+    [
+      "broken_sword",
+      "broken_helmet"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

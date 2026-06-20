@@ -1,0 +1,61 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.pachycephalosaurus.attack_1": {
+      "animation_length": 1,
+      "action_delay": [
+        0.33
+      ]
+    },
+    "animation.pachycephalosaurus.attack_2": {
+      "animation_length": 1,
+      "action_delay": [
+        0.42
+      ]
+    },
+    "animation.pachycephalosaurus.call": {
+      "animation_length": 2.7083
+    },
+    "animation.pachycephalosaurus.charge": {
+      "loop": true,
+      "animation_length": 0.75
+    },
+    "animation.pachycephalosaurus.display": {
+      "animation_length": 8
+    },
+    "animation.pachycephalosaurus.drink": {
+      "animation_length": 2.25
+    },
+    "animation.pachycephalosaurus.eat": {
+      "animation_length": 2.25
+    },
+    "animation.pachycephalosaurus.jump/fall": {
+      "loop": true,
+      "animation_length": 2
+    },
+    "animation.pachycephalosaurus.idle": {
+      "loop": true,
+      "animation_length": 12
+    },
+    "animation.pachycephalosaurus.run": {
+      "loop": true,
+      "animation_length": 0.75
+    },
+    "animation.pachycephalosaurus.sleep": {
+      "loop": true,
+      "animation_length": 12
+    },
+    "animation.pachycephalosaurus.speak": {
+      "animation_length": 1
+    },
+    "animation.pachycephalosaurus.swim": {
+      "loop": true,
+      "animation_length": 4
+    },
+    "animation.pachycephalosaurus.walk": {
+      "loop": true,
+      "animation_length": 2.6667
+    }
+  },
+  "geckolib_format_version": 2
+}

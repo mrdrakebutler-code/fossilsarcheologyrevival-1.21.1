@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "minecraft:bone"
+    },
+    "L": {
+      "tag": "fossil:bones_leg"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "L L",
+    "B B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "fossil:bone_leggings"
+  }
+}

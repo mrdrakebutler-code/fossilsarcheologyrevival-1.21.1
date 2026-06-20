@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_meat_quagga": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fossil:meat_quagga"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "fossil:cooked_quagga_from_smoking"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_meat_quagga"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "fossil:cooked_quagga_from_smoking"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "fossil:essence_chicken"
+    },
+    "P": {
+      "item": "minecraft:poisonous_potato"
+    }
+  },
+  "pattern": [
+    " P ",
+    "PCP",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "fossil:essence_stunted"
+  }
+}

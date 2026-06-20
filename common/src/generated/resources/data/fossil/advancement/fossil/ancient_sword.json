@@ -1,0 +1,44 @@
+{
+  "parent": "fossil:fossil/worktable",
+  "criteria": {
+    "ancient_helmet": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fossil:ancient_helmet"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "ancient_sword": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fossil:ancient_sword"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.fossil.ancient_sword.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "fossil:ancient_sword"
+    },
+    "title": {
+      "translate": "advancements.fossil.ancient_sword.title"
+    }
+  },
+  "requirements": [
+    [
+      "ancient_sword",
+      "ancient_helmet"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

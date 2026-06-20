@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_meat_dodo": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fossil:meat_dodo"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "fossil:cooked_dodo_from_campfire_cooking"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_meat_dodo"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "fossil:cooked_dodo_from_campfire_cooking"
+    ]
+  }
+}

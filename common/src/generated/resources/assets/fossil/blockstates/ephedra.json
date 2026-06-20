@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "fossil:block/plants/ephedra_stage0"
+    },
+    "age=1": {
+      "model": "fossil:block/plants/ephedra_stage1"
+    }
+  }
+}

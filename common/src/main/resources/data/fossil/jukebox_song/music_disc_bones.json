@@ -1,0 +1,8 @@
+{
+  "comparator_output": 0,
+  "description": {
+    "translate": "jukebox_song.fossil.bones"
+  },
+  "length_in_seconds": 196.0,
+  "sound_event": "fossil:music_bones"
+}

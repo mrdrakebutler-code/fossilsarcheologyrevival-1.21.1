@@ -1,0 +1,50 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.parasaurolophus.attack": {
+      "animation_length": 1
+    },
+    "animation.parasaurolophus.eat": {
+      "animation_length": 5.5
+    },
+    "animation.parasaurolophus.!eat": {
+      "animation_length": 9.1429
+    },
+    "animation.parasaurolophus.idle": {
+      "loop": true,
+      "animation_length": 8
+    },
+    "animation.parasaurolophus.run": {
+      "loop": true,
+      "animation_length": 1
+    },
+    "animation.parasaurolophus.sit": {
+      "loop": true,
+      "animation_length": 8
+    },
+    "animation.parasaurolophus.sleep_adult": {
+      "loop": true,
+      "animation_length": 8
+    },
+    "animation.parasaurolophus.sleep_baby": {
+      "loop": true,
+      "animation_length": 8
+    },
+    "animation.parasaurolophus.stand": {
+      "loop": true,
+      "animation_length": 8
+    },
+    "animation.parasaurolophus.stand_up": {
+      "animation_length": 2.5
+    },
+    "animation.parasaurolophus.swim": {
+      "loop": true,
+      "animation_length": 2.6667
+    },
+    "animation.parasaurolophus.walk": {
+      "loop": true,
+      "animation_length": 2.6667
+    }
+  },
+  "geckolib_format_version": 2
+}

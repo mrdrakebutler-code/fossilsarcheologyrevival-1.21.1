@@ -1,0 +1,42 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.sarcosuchus.attack": {
+      "animation_length": 0.7813,
+      "action_delay": [
+        0.31
+      ]
+    },
+    "animation.sarcosuchus.eat": {
+      "animation_length": 3.3
+    },
+    "animation.sarcosuchus.!eat_long": {
+      "animation_length": 8.3333
+    },
+    "animation.sarcosuchus.idle": {
+      "loop": true,
+      "animation_length": 6
+    },
+    "animation.sarcosuchus.idle_water": {
+      "loop": true,
+      "animation_length": 3.3333
+    },
+    "animation.sarcosuchus.run": {
+      "loop": true,
+      "animation_length": 0.6667
+    },
+    "animation.sarcosuchus.sleep": {
+      "loop": true,
+      "animation_length": 10
+    },
+    "animation.sarcosuchus.swim": {
+      "loop": true,
+      "animation_length": 3.3333
+    },
+    "animation.sarcosuchus.walk": {
+      "loop": true,
+      "animation_length": 2.8571
+    }
+  },
+  "geckolib_format_version": 2
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "fossil:scarab_gem"
+    },
+    {
+      "item": "fossil:amber_chunk_dominican"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "fossil:scarab_gem_aquatic"
+  }
+}

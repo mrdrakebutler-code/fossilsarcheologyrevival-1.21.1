@@ -1,0 +1,44 @@
+package com.github.teamfossilsarcheology.fossil.neoforge.data.providers;
+
+import com.github.teamfossilsarcheology.fossil.FossilMod;
+import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
+import net.neoforged.neoforge.client.model.generators.BlockModelBuilder;
+import net.neoforged.neoforge.client.model.generators.BlockModelProvider;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
+
+public class ModBlockModelProvider extends BlockModelProvider {
+    public ModBlockModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
+        super(output, FossilMod.MOD_ID, existingFileHelper);
+    }
+
+    @Override
+    protected void registerModels() {
+
+    }
+
+    public void registerExistingTexture(ResourceLocation... resourceLocation) {
+        for (ResourceLocation location : resourceLocation) {
+            existingFileHelper.trackGenerated(location, TEXTURE);
+        }
+    }
+
+    public void registerExistingModel(ResourceLocation... resourceLocation) {
+        for (ResourceLocation location : resourceLocation) {
+            existingFileHelper.trackGenerated(location, MODEL);
+        }
+    }
+
+    public BlockModelBuilder orientableWithBack(String name, ResourceLocation top, ResourceLocation front, ResourceLocation side, ResourceLocation back) {
+        return withExistingParent(name, FossilMod.location(BLOCK_FOLDER + "/orientable_with_back"))
+                .texture("top", top)
+                .texture("front", front)
+                .texture("side", side)
+                .texture("back", back)
+                .texture("bottom", back);
+    }
+
+    public BlockModelBuilder particleOnly(String name, String texture) {
+        return getBuilder(name).texture("particle", texture);
+    }
+}

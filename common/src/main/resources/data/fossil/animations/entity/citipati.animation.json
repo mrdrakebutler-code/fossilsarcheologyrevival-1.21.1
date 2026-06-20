@@ -1,0 +1,45 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.citipati.attack": {
+      "animation_length": 1,
+      "action_delay": [
+        0.58
+      ]
+    },
+    "animation.citipati.call": {
+      "animation_length": 1.25
+    },
+    "animation.citipati.eat": {
+      "animation_length": 3.0417
+    },
+    "animation.citipati.jump/fall": {
+      "loop": true,
+      "animation_length": 2
+    },
+    "animation.citipati.idle": {
+      "loop": true,
+      "animation_length": 12
+    },
+    "animation.citipati.run": {
+      "loop": true,
+      "animation_length": 0.625
+    },
+    "animation.citipati.sit/sleep": {
+      "loop": true,
+      "animation_length": 12
+    },
+    "animation.citipati.speak": {
+      "animation_length": 2
+    },
+    "animation.citipati.swim": {
+      "loop": true,
+      "animation_length": 4
+    },
+    "animation.citipati.walk": {
+      "loop": true,
+      "animation_length": 1.3333
+    }
+  },
+  "geckolib_format_version": 2
+}

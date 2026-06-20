@@ -1,0 +1,33 @@
+{
+  "parent": "fossil:fossil/broken_sword",
+  "criteria": {
+    "worktable": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fossil:worktable"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.fossil.worktable.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "fossil:worktable"
+    },
+    "title": {
+      "translate": "advancements.fossil.worktable.title"
+    }
+  },
+  "requirements": [
+    [
+      "worktable"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,173 @@
+import net.darkhax.curseforgegradle.TaskPublishCurseForge
+
+plugins {
+    id "com.github.johnrengelman.shadow"
+    id "com.modrinth.minotaur"
+    id "net.darkhax.curseforgegradle"
+}
+
+architectury {
+    platformSetupLoomIde()
+    forge()
+}
+
+configurations {
+    common {
+        canBeResolved = true
+        canBeConsumed = false
+    }
+    compileClasspath.extendsFrom common
+    runtimeClasspath.extendsFrom common
+    developmentForge.extendsFrom common
+
+    // Files in this configuration will be bundled into your mod using the Shadow plugin.
+    // Don't use the `shadow` configuration from the plugin itself as it's meant for excluding files.
+    shadowBundle {
+        canBeResolved = true
+        canBeConsumed = false
+    }
+}
+
+dependencies {
+    mappings loom.layered() {
+        officialMojangMappings() {
+            nameSyntheticMembers = true
+        }
+        parchment("org.parchmentmc.data:parchment-$parchment_mc_version:$parchment_date@zip")
+    }
+    forge "net.minecraftforge:forge:$minecraft_version-$forge_version"
+    modApi "dev.architectury:architectury-forge:$architectury_version"
+
+    common(project(path: ":common", configuration: "namedElements")) { transitive false }
+    shadowBundle project(path: ':common', configuration: 'transformProductionForge')
+
+    modImplementation "software.bernie.geckolib:geckolib-forge-$minecraft_version:$gecko_lib_version"
+    forgeRuntimeLibrary  "com.eliotlash.mclib:mclib:20"
+    modImplementation "com.github.glitchfiend:TerraBlender-forge:$minecraft_version-$terra_blender_version"
+    modImplementation "com.github.darkpred.morehitboxes:morehitboxes-forge-$minecraft_version:$more_hitboxes_version"
+
+    compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.4.1"))
+    implementation(include("io.github.llamalad7:mixinextras-forge:0.4.1"))
+
+    //Optional
+    modImplementation "maven.modrinth:jade:$jade_version_forge"
+    modCompileOnly "me.shedaniel:RoughlyEnoughItems-forge:$rei_version"
+    modRuntimeOnly "me.shedaniel:RoughlyEnoughItems-forge:$rei_version"
+    modCompileOnly "mezz.jei:jei-$minecraft_version-forge-api:$jei_version"
+    //modRuntimeOnly "mezz.jei:jei-$minecraft_version-forge:$jei_version"
+    modCompileOnly "dev.emi:emi-forge:$emi_version+$minecraft_version:api"
+    modCompileOnly "dev.emi:emi-forge:$emi_version+$minecraft_version"
+
+    modCompileOnly "maven.modrinth:carry-on:$carry_on_version_forge"
+    modCompileOnly "maven.modrinth:farmers-delight:$minecraft_version-$farmers_delight_version_forge"
+    modCompileOnly "maven.modrinth:oceans-delight:1.0.2-1.20"
+    modCompileOnly "curse.maven:nethers-delight-496394:4736227" //1.20.1-4.0
+    modCompileOnly "maven.modrinth:delightful:3.8-1.20.1"
+    modCompileOnly "maven.modrinth:ars-nouveau:4.12.7" //for delightful
+    modCompileOnly "maven.modrinth:enders-delight:1.1.3" //1.20.1-1.1.3
+    modCompileOnly "maven.modrinth:ends-delight:2.5.1+forge.1.20.1"
+    modCompileOnly "maven.modrinth:crabbers-delight:1.2.3" //1.20.1-1.2.3
+    modCompileOnly "maven.modrinth:miners-delight:1.20.1-1.2.3"
+    modCompileOnly "maven.modrinth:corn-delight:1.0.4-1.20.1"
+    modCompileOnly "maven.modrinth:mmlib:1.4.4-1.20.1" //For corn delight
+    modCompileOnly "maven.modrinth:cultural-delights:0.16.5" //1.20.1
+    modCompileOnly "maven.modrinth:pineapple-delight:1.0.13" //1.20.1
+    modCompileOnly "maven.modrinth:festive-delight:2.0.0" //1.20.1-2.0.0
+   // modCompileOnly "maven.modrinth:butchers-delight:1.20.12.1.0"
+    modCompileOnly "maven.modrinth:butchers-delight-foods:1.20.11.0.3"
+    modCompileOnly "maven.modrinth:coffee-delight:1.5.1" //1.20.1-1.5.1
+    modCompileOnly "maven.modrinth:casualness-delight:1.20.1-0.4n"
+    modCompileOnly "maven.modrinth:seed-delight:TDZM7AA5" //1.20.1-1.0.1
+    modCompileOnly "curse.maven:argentinasdelight-831127:4818264" //1.20.1 3.0 beta
+    modCompileOnly "maven.modrinth:brewin-and-chewin:1.20.1-3.2.1"
+    modCompileOnly "curse.maven:alexs-delight-556448:5028450" //1.20.1-1.5
+    modCompileOnly "curse.maven:farmers-respite-551453:5543547" //1.20.1-2.1.2
+    //modCompileOnly "curse.maven:citadel-331936:3783096" //For alex's delight/alex's mobs
+    //modCompileOnly "curse.maven:curios-309927:4985315" //For ars nouveau
+    //modCompileOnly "curse.maven:patchouli-306770:3846086" //For ars nouveau
+
+    modCompileOnly "maven.modrinth:alexs-mobs:$alex_mobs_version"
+
+    modCompileOnly("com.simibubi.create:create-$minecraft_version:$create_version:slim") { transitive false }
+    modCompileOnly "dev.engine-room.flywheel:flywheel-forge-api-$minecraft_version:$flywheel_version"
+
+    modCompileOnly "maven.modrinth:prehistoric-fauna:$prehistoric_fauna_version"
+    modLocalRuntime "maven.modrinth:prehistoric-fauna:$prehistoric_fauna_version"
+
+    //Create runtime
+    //modLocalRuntime("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") { transitive false }
+    //modLocalRuntime "net.createmod.ponder:Ponder-Forge-${minecraft_version}:${ponder_version}"
+    //modLocalRuntime "dev.engine-room.flywheel:flywheel-forge-${minecraft_version}:${flywheel_version}"
+    //modLocalRuntime "com.tterrag.registrate:Registrate:${registrate_version}"
+
+    //modImplementation "curse.maven:cyanide-541676:5778405"
+    modLocalRuntime "maven.modrinth:debugutils:Tr2n6OzX"
+
+}
+
+loom {
+    accessWidenerPath = project(":common").loom.accessWidenerPath
+
+    runs {
+        data {
+            //regen run config if changed
+            data()
+            programArgs "--all", "--mod", "$mod_id"
+            programArgs "--output",  project(":common").file("src/generated/resources/").absolutePath
+            programArgs "--existing", project(":common").file("src/main/resources/").absolutePath
+        }
+    }
+    forge {
+        convertAccessWideners = true
+        extraAccessWideners.add loom.accessWidenerPath.get().asFile.name
+        mixinConfig "fossil_forge.mixins.json"
+        mixinConfig "fossil_common.mixins.json"
+    }
+}
+
+shadowJar {
+    configurations = [project.configurations.shadowBundle]
+    archiveClassifier = 'dev-shadow'
+}
+
+remapJar {
+    inputFile.set shadowJar.archiveFile
+    archiveAppendix = "forge-$minecraft_version"
+}
+
+tasks.named("modrinth") {
+    modrinth {
+        token = "${project.property("MODRINTH_TOKEN") ?: "no value"}"
+        projectId = "IJY7IqPP"
+        versionNumber = "$minecraft_version-$mod_version-${project.name}"
+        versionType = "release"
+        uploadFile = tasks.remapJar
+        versionName = "$mod_version for Forge $minecraft_version"
+        debugMode = true
+        dependencies {
+            required.project("architectury-api")
+            required.project("geckolib")
+            required.project("terrablender")
+            required.project("more-hitboxes")
+        }
+        changelog = rootProject.file("CHANGELOG.md").text
+    }
+}
+
+tasks.register('publishCurseForge', TaskPublishCurseForge) {
+    group = "publishing"
+    description = "Publishes jar to CurseForge"
+    apiToken = project.property("CURSEFORGE_TOKEN") ?: "no value"
+    debugMode = true
+    def mainFile = upload(223908, tasks.remapJar)
+    mainFile.displayName = "$mod_version for Forge $minecraft_version"
+    mainFile.addEnvironment("Forge")
+    mainFile.changelog = rootProject.file("CHANGELOG.md").text
+    mainFile.changelogType = "markdown"
+    mainFile.releaseType = "release"
+    mainFile.addRequirement("architectury-api", "geckolib", "terrablender", "more-hitboxes")
+}
+
+tasks.named("publish") {
+    finalizedBy("modrinth", "publishCurseForge")
+}

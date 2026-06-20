@@ -1,0 +1,9 @@
+{
+  "values": [
+    "#minecraft:sand",
+    "#minecraft:dirt",
+    "fossil:dense_sand",
+    "fossil:volcanic_ash",
+    "minecraft:soul_sand"
+  ]
+}

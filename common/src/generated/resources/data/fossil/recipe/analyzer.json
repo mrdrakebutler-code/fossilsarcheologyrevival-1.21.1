@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "tag": "fossil:fossils"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "R": {
+      "item": "fossil:relic_scrap"
+    }
+  },
+  "pattern": [
+    "IRI",
+    "IBI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "fossil:analyzer"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.diplocaulus.attack": {
+      "animation_length": 0.5,
+      "action_delay": [
+        0.5
+      ]
+    },
+    "animation.diplocaulus.burrowed": {
+      "loop": true,
+      "animation_length": 4
+    },
+    "animation.diplocaulus.dance": {
+      "loop": true,
+      "animation_length": 1
+    },
+    "animation.diplocaulus.eat/drink": {
+      "animation_length": 1.375
+    },
+    "animation.diplocaulus.jump/fall": {
+      "loop": true,
+      "animation_length": 2
+    },
+    "animation.diplocaulus.idle/beached": {
+      "loop": true,
+      "animation_length": 4
+    },
+    "animation.diplocaulus.idle_water": {
+      "loop": true,
+      "animation_length": 4
+    },
+    "animation.diplocaulus.leaveground": {
+      "animation_length": 1
+    },
+    "animation.diplocaulus.sleep/sit": {
+      "loop": true,
+      "animation_length": 4
+    },
+    "animation.diplocaulus.swim": {
+      "loop": true,
+      "animation_length": 2
+    },
+    "animation.diplocaulus.swim_fast": {
+      "loop": true,
+      "animation_length": 1
+    }
+  },
+  "geckolib_format_version": 2
+}

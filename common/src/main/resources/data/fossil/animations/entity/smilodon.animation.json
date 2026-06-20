@@ -1,0 +1,36 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.smilodon.attack": {
+      "animation_length": 0.625,
+      "action_delay": [
+        0.38
+      ]
+    },
+    "animation.smilodon.eat": {
+      "loop": true,
+      "animation_length": 6.4286
+    },
+    "animation.smilodon.idle": {
+      "loop": true,
+      "animation_length": 6.6667
+    },
+    "animation.smilodon.sleep": {
+      "loop": true,
+      "animation_length": 5.5556
+    },
+    "animation.smilodon.sprint": {
+      "loop": true,
+      "animation_length": 0.5
+    },
+    "animation.smilodon.swim": {
+      "loop": true,
+      "animation_length": 2
+    },
+    "animation.smilodon.walk": {
+      "loop": true,
+      "animation_length": 1.6667
+    }
+  },
+  "geckolib_format_version": 2
+}

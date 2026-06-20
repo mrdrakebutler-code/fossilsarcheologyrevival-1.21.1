@@ -1,0 +1,48 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.postosuchus.attack_1": {
+      "animation_length": 1,
+      "action_delay": [
+        0.38
+      ]
+    },
+    "animation.postosuchus.attack_2": {
+      "animation_length": 1,
+      "action_delay": [
+        0.38
+      ]
+    },
+    "animation.postosuchus.call": {
+      "animation_length": 2
+    },
+    "animation.postosuchus.eat": {
+      "animation_length": 3
+    },
+    "animation.postosuchus.idle": {
+      "loop": true,
+      "animation_length": 12
+    },
+    "animation.postosuchus.run": {
+      "loop": true,
+      "animation_length": 0.5
+    },
+    "animation.postosuchus.sit": {
+      "loop": true,
+      "animation_length": 6
+    },
+    "animation.postosuchus.sleep": {
+      "loop": true,
+      "animation_length": 6
+    },
+    "animation.postosuchus.swim": {
+      "loop": true,
+      "animation_length": 4
+    },
+    "animation.postosuchus.walk": {
+      "loop": true,
+      "animation_length": 1.6667
+    }
+  },
+  "geckolib_format_version": 2
+}

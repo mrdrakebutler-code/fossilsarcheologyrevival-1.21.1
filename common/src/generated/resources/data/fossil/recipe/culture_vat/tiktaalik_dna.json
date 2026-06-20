@@ -1,0 +1,13 @@
+{
+  "type": "fossil:culture_vat",
+  "fuel": {
+    "item": "fossil:bio_goo"
+  },
+  "input": {
+    "item": "fossil:tiktaalik_dna"
+  },
+  "result": {
+    "count": 1,
+    "id": "fossil:egg_item_tiktaalik"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "parent": "fossil:fossil/break_fossil",
+  "criteria": {
+    "scarab_gem": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fossil:scarab_gem"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.fossil.scarab_gem.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "fossil:scarab_gem"
+    },
+    "title": {
+      "translate": "advancements.fossil.scarab_gem.title"
+    }
+  },
+  "requirements": [
+    [
+      "scarab_gem"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

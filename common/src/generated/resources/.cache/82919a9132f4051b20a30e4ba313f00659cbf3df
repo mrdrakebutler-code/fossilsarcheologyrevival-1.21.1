@@ -1,0 +1,4 @@
+// 1.21.1	2026-06-19T10:32:00.2884026	Tags for minecraft:entity_type mod id fossil
+9c4ad0193b22528323e6211a1b122dc4485cf039 data/fossil/tags/entity_type/livestock.json
+d0fe09146211a3491724b1479bebd00c46d53b71 data/fossil/tags/entity_type/mammal.json
+c264051b1af8559765043cad31da846830f767f5 data/minecraft/tags/entity_type/freeze_immune_entity_types.json

@@ -1,0 +1,95 @@
+{
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "fossil:scarab_gem"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "fossil:broken_sword",
+              "weight": 5
+            },
+            {
+              "type": "minecraft:item",
+              "name": "fossil:broken_helmet",
+              "weight": 5
+            },
+            {
+              "type": "minecraft:item",
+              "name": "fossil:skull",
+              "weight": 34
+            },
+            {
+              "type": "minecraft:item",
+              "name": "fossil:fossil_bio",
+              "weight": 275
+            },
+            {
+              "type": "minecraft:item",
+              "name": "fossil:relic_scrap",
+              "weight": 200
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:bone",
+              "weight": 440
+            },
+            {
+              "type": "minecraft:item",
+              "name": "fossil:fossil_plant",
+              "weight": 110
+            },
+            {
+              "type": "minecraft:dynamic",
+              "name": "fossil:bones_leg",
+              "weight": 6
+            },
+            {
+              "type": "minecraft:dynamic",
+              "name": "fossil:bones_arm",
+              "weight": 6
+            },
+            {
+              "type": "minecraft:dynamic",
+              "name": "fossil:bones_foot",
+              "weight": 3
+            },
+            {
+              "type": "minecraft:dynamic",
+              "name": "fossil:bones_skull",
+              "weight": 3
+            },
+            {
+              "type": "minecraft:dynamic",
+              "name": "fossil:bones_ribcage",
+              "weight": 3
+            },
+            {
+              "type": "minecraft:dynamic",
+              "name": "fossil:bones_vertebrae",
+              "weight": 3
+            },
+            {
+              "type": "minecraft:dynamic",
+              "name": "fossil:bones_unique",
+              "weight": 3
+            },
+            {
+              "type": "minecraft:dynamic",
+              "name": "fossil:bones_tail",
+              "weight": 3
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "fossil:regular_fossil"
+}

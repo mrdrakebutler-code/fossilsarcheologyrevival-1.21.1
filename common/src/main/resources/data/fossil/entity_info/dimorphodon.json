@@ -1,0 +1,33 @@
+{
+  "ai": {
+    "activity": "DIURNAL",
+    "attacking": "BASIC",
+    "climbing": "ARTHROPOD",
+    "moving": "FLIGHT",
+    "response": "CALM",
+    "taming": "IMPRINTING"
+  },
+  "attributes": {
+    "damageBase": 1.0,
+    "damageMax": 1.0,
+    "healthBase": 1.0,
+    "healthMax": 12.0,
+    "speedBase": 0.15,
+    "speedMax": 0.2,
+    "sprintMod": 1.2,
+    "armorBase": 0.0,
+    "armorMax": 0.0,
+    "knockBackResistanceBase": 0.0,
+    "knockBackResistanceMax": 0.0
+  },
+  "adultAgeDays": 5,
+  "teenAgeDays": 2,
+  "breaksBlocks": false,
+  "canBeRidden": false,
+  "diet": "CARNIVORE",
+  "maxHunger": 50,
+  "maxPopulation": 10,
+  "eggScale": 0.6,
+  "scaleBase": 0.12,
+  "scaleMax": 1
+}

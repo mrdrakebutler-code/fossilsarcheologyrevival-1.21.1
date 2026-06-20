@@ -1,0 +1,22 @@
+{
+  "type": "fossil:analyzer",
+  "input": {
+    "item": "minecraft:porkchop"
+  },
+  "outputs": [
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:hoglin_dna"
+      },
+      "weight": 5.0
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:pig_dna"
+      },
+      "weight": 95.0
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "type": "fossil:analyzer",
+  "input": {
+    "item": "minecraft:rabbit_foot"
+  },
+  "outputs": [
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:rabbit_dna"
+      },
+      "weight": 100.0
+    }
+  ]
+}

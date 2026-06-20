@@ -1,0 +1,33 @@
+{
+  "ai": {
+    "activity": "BOTH",
+    "attacking": "BASIC",
+    "climbing": "NONE",
+    "moving": "SEMI_AQUATIC",
+    "response": "AGGRESSIVE",
+    "taming": "AQUATIC_GEM"
+  },
+  "attributes": {
+    "damageBase": 1.0,
+    "damageMax": 19.0,
+    "healthBase": 10.0,
+    "healthMax": 70.0,
+    "speedBase": 0.15,
+    "speedMax": 0.2,
+    "swimSpeedBase": 0.1,
+    "swimSpeedMax": 0.15,
+    "armorBase": 2.0,
+    "armorMax": 20.0,
+    "knockBackResistanceBase": 0.0,
+    "knockBackResistanceMax": 1.0
+  },
+  "adultAgeDays": 12,
+  "teenAgeDays": 5,
+  "breaksBlocks": true,
+  "canBeRidden": true,
+  "diet": "PISCI_CARNIVORE",
+  "maxHunger": 150,
+  "maxPopulation": 15,
+  "scaleBase": 0.2,
+  "scaleMax": 1.65
+}

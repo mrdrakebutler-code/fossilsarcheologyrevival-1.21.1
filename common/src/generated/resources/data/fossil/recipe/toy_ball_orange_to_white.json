@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:white_dye"
+    },
+    {
+      "item": "fossil:toy_ball_orange"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "fossil:toy_ball_white"
+  }
+}

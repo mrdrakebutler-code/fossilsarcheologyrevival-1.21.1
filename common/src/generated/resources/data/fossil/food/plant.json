@@ -1,0 +1,270 @@
+{
+  "blocks": [
+    {
+      "block": "fossil:bennettitales_large",
+      "value": 30
+    },
+    {
+      "block": "fossil:bennettitales_small",
+      "value": 15
+    },
+    {
+      "block": "fossil:cephalotaxus",
+      "value": 15
+    },
+    {
+      "block": "fossil:crataegus",
+      "value": 35
+    },
+    {
+      "block": "fossil:cyathea",
+      "value": 60
+    },
+    {
+      "block": "fossil:dictyophyllum",
+      "value": 15
+    },
+    {
+      "block": "fossil:dillhoffia",
+      "value": 15
+    },
+    {
+      "block": "fossil:dipteris",
+      "value": 30
+    },
+    {
+      "block": "fossil:duisbergia",
+      "value": 30
+    },
+    {
+      "block": "fossil:ephedra",
+      "value": 25
+    },
+    {
+      "block": "fossil:florissantia",
+      "value": 15
+    },
+    {
+      "block": "fossil:foozia",
+      "value": 30
+    },
+    {
+      "block": "fossil:horsetail_large",
+      "value": 30
+    },
+    {
+      "block": "fossil:horsetail_small",
+      "value": 15
+    },
+    {
+      "block": "fossil:licopodiophyta",
+      "value": 15
+    },
+    {
+      "block": "fossil:osmunda",
+      "value": 15
+    },
+    {
+      "block": "fossil:plant_ferns",
+      "value": 15
+    },
+    {
+      "block": "fossil:sagenopteris",
+      "value": 15
+    },
+    {
+      "block": "fossil:sarracenia",
+      "value": 30
+    },
+    {
+      "block": "fossil:vaccinium",
+      "value": 35
+    },
+    {
+      "block": "fossil:welwitschia",
+      "value": 15
+    },
+    {
+      "block": "fossil:zamites",
+      "value": 30
+    },
+    {
+      "block": "minecraft:beetroots",
+      "value": 15
+    },
+    {
+      "block": "minecraft:brown_mushroom",
+      "value": 15
+    },
+    {
+      "block": "minecraft:cake",
+      "value": 70
+    },
+    {
+      "block": "minecraft:carrots",
+      "value": 75
+    },
+    {
+      "block": "minecraft:chorus_flower",
+      "value": 40
+    },
+    {
+      "block": "minecraft:chorus_plant",
+      "value": 20
+    },
+    {
+      "tag": "minecraft:flowers",
+      "value": 5
+    },
+    {
+      "block": "minecraft:hay_block",
+      "value": 75
+    },
+    {
+      "block": "minecraft:kelp",
+      "value": 5
+    },
+    {
+      "block": "minecraft:kelp_plant",
+      "value": 5
+    },
+    {
+      "tag": "minecraft:leaves",
+      "value": 20
+    },
+    {
+      "block": "minecraft:lily_pad",
+      "value": 10
+    },
+    {
+      "block": "minecraft:melon",
+      "value": 50
+    },
+    {
+      "block": "minecraft:potatoes",
+      "value": 25
+    },
+    {
+      "block": "minecraft:pumpkin",
+      "value": 40
+    },
+    {
+      "block": "minecraft:red_mushroom",
+      "value": 15
+    },
+    {
+      "tag": "minecraft:saplings",
+      "value": 15
+    },
+    {
+      "block": "minecraft:short_grass",
+      "value": 5
+    },
+    {
+      "block": "minecraft:sugar_cane",
+      "value": 15
+    },
+    {
+      "block": "minecraft:sweet_berry_bush",
+      "value": 30
+    },
+    {
+      "block": "minecraft:tall_grass",
+      "value": 10
+    },
+    {
+      "block": "minecraft:wheat",
+      "value": 15
+    }
+  ],
+  "entities": [],
+  "items": [
+    {
+      "tag": "c:foods/berry"
+    },
+    {
+      "tag": "c:foods/bread"
+    },
+    {
+      "tag": "c:foods/fruit"
+    },
+    {
+      "tag": "c:foods/vegetable"
+    },
+    {
+      "item": "fossil:fern_seed",
+      "value": 5
+    },
+    {
+      "item": "minecraft:apple"
+    },
+    {
+      "item": "minecraft:baked_potato"
+    },
+    {
+      "item": "minecraft:beetroot"
+    },
+    {
+      "item": "minecraft:beetroot_seeds",
+      "value": 5
+    },
+    {
+      "item": "minecraft:bread"
+    },
+    {
+      "item": "minecraft:cake",
+      "value": 70
+    },
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "item": "minecraft:chorus_fruit"
+    },
+    {
+      "item": "minecraft:cookie"
+    },
+    {
+      "item": "minecraft:dried_kelp"
+    },
+    {
+      "item": "minecraft:glow_berries"
+    },
+    {
+      "item": "minecraft:melon_seeds",
+      "value": 5
+    },
+    {
+      "item": "minecraft:melon_slice"
+    },
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "item": "minecraft:pumpkin_pie"
+    },
+    {
+      "item": "minecraft:pumpkin_seeds",
+      "value": 5
+    },
+    {
+      "item": "minecraft:sugar",
+      "value": 7
+    },
+    {
+      "item": "minecraft:sugar_cane",
+      "value": 15
+    },
+    {
+      "item": "minecraft:sweet_berries"
+    },
+    {
+      "item": "minecraft:wheat",
+      "value": 13
+    },
+    {
+      "item": "minecraft:wheat_seeds",
+      "value": 5
+    }
+  ]
+}

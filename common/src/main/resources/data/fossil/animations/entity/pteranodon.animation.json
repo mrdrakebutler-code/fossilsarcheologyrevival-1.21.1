@@ -1,0 +1,70 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.pteranodon.attack": {
+      "animation_length": 0.5,
+      "action_delay": [
+        0.38
+      ]
+    },
+    "animation.pteranodon.call": {
+      "animation_length": 3
+    },
+    "animation.pteranodon.drink": {
+      "animation_length": 2
+    },
+    "animation.pteranodon.eat": {
+      "animation_length": 2
+    },
+    "animation.pteranodon.dive": {
+      "loop": true,
+      "animation_length": 1
+    },
+    "animation.pteranodon.fly": {
+      "loop": true,
+      "animation_length": 6.5
+    },
+    "animation.pteranodon.fly_fast": {
+      "loop": true,
+      "animation_length": 3.4583
+    },
+    "animation.pteranodon.idle": {
+      "loop": true,
+      "animation_length": 3.125
+    },
+    "animation.pteranodon.idle_air": {
+      "loop": true,
+      "animation_length": 2
+    },
+    "animation.pteranodon.idle_water": {
+      "loop": true,
+      "animation_length": 3
+    },
+    "animation.pteranodon.sit": {
+      "loop": true,
+      "animation_length": 12
+    },
+    "animation.pteranodon.sleep": {
+      "loop": true,
+      "animation_length": 3
+    },
+    "animation.pteranodon.speak": {
+      "animation_length": 1.0417
+    },
+    "animation.pteranodon.swim": {
+      "loop": true,
+      "animation_length": 1.5417
+    },
+    "animation.pteranodon.takeoff": {
+      "animation_length": 1.5,
+      "action_delay": [
+        1
+      ]
+    },
+    "animation.pteranodon.walk": {
+      "loop": true,
+      "animation_length": 2.6667
+    }
+  },
+  "geckolib_format_version": 2
+}

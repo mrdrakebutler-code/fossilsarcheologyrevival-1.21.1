@@ -1,0 +1,52 @@
+{
+	"elements": [
+		{
+			"name": "body",
+			"pos": [0, 0, 1],
+			"width": 19.6,
+			"height": 26.8,
+			"ref": "body_hitbox"
+		},
+		{
+			"name": "head1",
+			"pos": [0, 16.4, 17.3],
+			"width": 12.2,
+			"height": 13,
+			"ref": "head1_hitbox"
+		},
+		{
+			"name": "head2",
+			"pos": [0, 26.4, 29.8],
+			"width": 12.2,
+			"height": 17,
+			"ref": "head2_hitbox"
+		},
+		{
+			"name": "head3",
+			"pos": [0, 41.4, 42.3],
+			"width": 12.2,
+			"height": 11,
+			"ref": "head3_hitbox"
+		},
+		{
+			"name": "tail1",
+			"pos": [0, 10.4, -18.1],
+			"width": 17.2,
+			"height": 15,
+			"ref": "tail1_hitbox"
+		},
+		{
+			"name": "tail2",
+			"pos": [0, 11.4, -35.6],
+			"width": 17.2,
+			"height": 10,
+			"ref": "tail2_hitbox"
+		},
+		{
+			"name": "rider_pos",
+			"pos": [0, 25.25, 1],
+			"ref": "rider_pos",
+			"is_anchor": true
+		}
+	]
+}

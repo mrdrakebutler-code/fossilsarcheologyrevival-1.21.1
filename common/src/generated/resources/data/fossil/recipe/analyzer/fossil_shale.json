@@ -1,0 +1,106 @@
+{
+  "type": "fossil:analyzer",
+  "input": {
+    "item": "fossil:fossil_shale"
+  },
+  "outputs": [
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:arthropleura_dna"
+      },
+      "weight": 1.25
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:bone_meal"
+      },
+      "weight": 50.0
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:crassigyrinus_dna"
+      },
+      "weight": 1.25
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:dicranurus_dna"
+      },
+      "weight": 1.25
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:dimetrodon_dna"
+      },
+      "weight": 1.25
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:diplocaulus_dna"
+      },
+      "weight": 1.25
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:edaphosaurus_dna"
+      },
+      "weight": 1.25
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:lonchodomas_dna"
+      },
+      "weight": 1.25
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:megalograptus_dna"
+      },
+      "weight": 1.25
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:meganeura_dna"
+      },
+      "weight": 1.25
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:scotoharpes_dna"
+      },
+      "weight": 1.25
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:tiktaalik_dna"
+      },
+      "weight": 1.25
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:tuff"
+      },
+      "weight": 35.0
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:walliserops_dna"
+      },
+      "weight": 1.25
+    }
+  ]
+}

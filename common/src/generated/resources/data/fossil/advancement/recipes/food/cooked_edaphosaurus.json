@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_meat_edaphosaurus": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fossil:meat_edaphosaurus"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "fossil:cooked_edaphosaurus"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_meat_edaphosaurus"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "fossil:cooked_edaphosaurus"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "fossil:anu_lair",
+  "generator": {
+    "type": "fossil:anu_lair",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "fossil:anu_lair"
+    }
+  }
+}

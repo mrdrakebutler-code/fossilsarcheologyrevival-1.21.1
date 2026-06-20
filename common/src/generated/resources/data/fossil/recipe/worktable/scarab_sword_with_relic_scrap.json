@@ -1,0 +1,13 @@
+{
+  "type": "fossil:worktable",
+  "fuel": {
+    "item": "fossil:relic_scrap"
+  },
+  "input": {
+    "item": "fossil:scarab_sword"
+  },
+  "result": {
+    "count": 1,
+    "id": "fossil:scarab_sword"
+  }
+}

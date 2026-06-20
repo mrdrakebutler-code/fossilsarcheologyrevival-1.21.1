@@ -1,0 +1,8 @@
+{
+  "comparator_output": 1,
+  "description": {
+    "translate": "jukebox_song.fossil.anu"
+  },
+  "length_in_seconds": 221.0,
+  "sound_event": "fossil:music_anu"
+}

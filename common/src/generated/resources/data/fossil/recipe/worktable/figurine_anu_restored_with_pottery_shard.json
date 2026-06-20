@@ -1,0 +1,13 @@
+{
+  "type": "fossil:worktable",
+  "fuel": {
+    "item": "fossil:pottery_shard"
+  },
+  "input": {
+    "item": "fossil:figurine_anu_restored"
+  },
+  "result": {
+    "count": 1,
+    "id": "fossil:figurine_anu_pristine"
+  }
+}

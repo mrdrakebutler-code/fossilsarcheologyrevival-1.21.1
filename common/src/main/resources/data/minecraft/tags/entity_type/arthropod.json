@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "fossil:arthropleura",
+    "fossil:megalograptus",
+    "fossil:meganeura",
+    "fossil:dicranurus",
+    "fossil:lonchodomas",
+    "fossil:scotoharpes",
+    "fossil:walliserops"
+  ]
+}

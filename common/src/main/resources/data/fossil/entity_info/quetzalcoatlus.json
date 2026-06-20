@@ -1,0 +1,33 @@
+{
+  "ai": {
+    "activity": "DIURNAL",
+    "attacking": "BASIC",
+    "climbing": "NONE",
+    "moving": "FLIGHT",
+    "response": "TERRITORIAL",
+    "taming": "FEEDING"
+  },
+  "attributes": {
+    "damageBase": 2.0,
+    "damageMax": 19.0,
+    "healthBase": 6.0,
+    "healthMax": 40.0,
+    "speedBase": 0.15,
+    "speedMax": 0.2,
+    "sprintMod": 1.2,
+    "armorBase": 0.0,
+    "armorMax": 2.0,
+    "knockBackResistanceBase": 0.0,
+    "knockBackResistanceMax": 1.0
+  },
+  "adultAgeDays": 9,
+  "teenAgeDays": 4,
+  "breaksBlocks": false,
+  "canBeRidden": true,
+  "diet": "CARNIVORE",
+  "maxHunger": 150,
+  "maxPopulation": 6,
+  "eggScale": 1.25,
+  "scaleBase": 0.3,
+  "scaleMax": 1.75
+}

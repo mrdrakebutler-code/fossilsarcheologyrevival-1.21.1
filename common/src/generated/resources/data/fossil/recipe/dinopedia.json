@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "tag": "fossil:fossils"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "fossil:dinopedia"
+  }
+}

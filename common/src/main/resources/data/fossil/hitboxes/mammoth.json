@@ -1,0 +1,29 @@
+{
+	"elements": [
+		{
+			"name": "body1",
+			"pos": [0, 0, -7],
+			"width": 16,
+			"height": 34
+		},
+		{
+			"name": "body2",
+			"pos": [0, 0, 9],
+			"width": 16,
+			"height": 34
+		},
+		{
+			"name": "head",
+			"pos": [0, 14.5, 23],
+			"width": 12,
+			"height": 22.3,
+			"ref": "head_hitbox"
+		},
+		{
+			"name": "rider_pos",
+			"pos": [0, 32, 5],
+			"ref": "rider_pos",
+			"is_anchor": true
+		}
+	]
+}

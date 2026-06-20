@@ -1,0 +1,14 @@
+{
+  "type": "fossil:worktable",
+  "duration": 3000,
+  "fuel": {
+    "item": "fossil:relic_scrap"
+  },
+  "input": {
+    "item": "fossil:ancient_helmet"
+  },
+  "result": {
+    "count": 1,
+    "id": "fossil:ancient_helmet"
+  }
+}

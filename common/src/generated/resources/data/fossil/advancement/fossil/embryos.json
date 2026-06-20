@@ -1,0 +1,33 @@
+{
+  "parent": "fossil:fossil/culture_vat",
+  "criteria": {
+    "requirement": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#fossil:embryos"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.fossil.embryos.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "fossil:syringe_mammoth"
+    },
+    "title": {
+      "translate": "advancements.fossil.embryos.title"
+    }
+  },
+  "requirements": [
+    [
+      "requirement"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

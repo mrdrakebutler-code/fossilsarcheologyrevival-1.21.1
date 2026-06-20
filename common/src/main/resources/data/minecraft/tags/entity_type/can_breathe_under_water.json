@@ -1,0 +1,27 @@
+{
+  "replace": false,
+  "values": [
+    "fossil:liopleurodon",
+    "fossil:megalodon",
+    "fossil:mosasaurus",
+    "fossil:sarcosuchus",
+    "fossil:spinosaurus",
+    "fossil:aquilolamna",
+    "fossil:crassigyrinus",
+    "fossil:diplocaulus",
+    "fossil:henodus",
+    "fossil:ichthyosaurus",
+    "fossil:megalograptus",
+    "fossil:plesiosaurus",
+    "fossil:tiktaalik",
+    "fossil:dicranurus",
+    "fossil:lonchodomas",
+    "fossil:scotoharpes",
+    "fossil:walliserops",
+    "fossil:alligator_gar",
+    "fossil:coelacanth",
+    "fossil:nautilus",
+    "fossil:sturgeon",
+    "fossil:meganeura"
+  ]
+}

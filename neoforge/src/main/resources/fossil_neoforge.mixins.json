@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.github.teamfossilsarcheology.fossil.neoforge.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "GeoEntityRendererMixin"
+  ],
+  "mixins": [
+    "WalkNodeEvaluatorMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

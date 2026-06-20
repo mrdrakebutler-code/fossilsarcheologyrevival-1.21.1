@@ -1,0 +1,54 @@
+package com.github.teamfossilsarcheology.fossil.compat.geckolib;
+
+import software.bernie.geckolib.loading.math.MathValue;
+import software.bernie.geckolib.loading.math.value.Constant;
+import software.bernie.geckolib.cache.object.GeoBone;
+import software.bernie.geckolib.animation.AnimationController;
+import software.bernie.geckolib.animation.AnimationProcessor;
+import software.bernie.geckolib.animation.keyframe.*;
+import software.bernie.geckolib.animation.state.BoneSnapshot;
+
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+public class AnimationControllerOverride {
+    private static final Keyframe<MathValue> ZERO_KEYFRAME = new Keyframe<>(0.0, new Constant(0), new Constant(0));
+    private static final AnimationPoint POINT = new AnimationPoint(ZERO_KEYFRAME, 0, 0, 0, 0);
+    private static final AnimationPoint SCALE_POINT = new AnimationPoint(ZERO_KEYFRAME, 0, 0, 1, 1);
+
+    /**
+     * Adds transition logic to {@link AnimationController#process}
+     * with the goal of adding a transition animation for bones that have no animation points in the new animation.
+     */
+    public static void fixTransitions(Map<String, GeoBone> bones, AnimationProcessor.QueuedAnimation currentAnimation, Map<String, BoneSnapshot> boneSnapshots,
+                                      double adjustedTick, boolean firstTick, Map<String, BoneSnapshot> snapshots,
+                                      double transitionLength, Map<String, BoneAnimationQueue> boneAnimationQueues) {
+        Set<String> previousBones = new HashSet<>(boneSnapshots.keySet());
+        Set<String> newBones = Arrays.stream(currentAnimation.animation().boneAnimations()).map(BoneAnimation::boneName).collect(Collectors.toSet());
+        previousBones.removeAll(newBones);
+        if (firstTick) {
+            for (String previousBone : previousBones) {
+                boneSnapshots.put(previousBone, BoneSnapshot.copy(snapshots.get(previousBone)));
+            }
+        }
+        for (String boneName : previousBones) {
+            if (!bones.containsKey(boneName)) {
+                continue;
+            }
+            GeoBone bone = bones.get(boneName);
+
+            BoneAnimationQueue boneAnimationQueue = boneAnimationQueues.get(boneName);
+
+            BoneSnapshot boneSnapshot = boneSnapshots.get(boneName);
+            boneAnimationQueue.addNextRotation(null, adjustedTick, transitionLength, boneSnapshot, bone.getInitialSnapshot(),
+                    POINT, POINT, POINT);
+            boneAnimationQueue.addNextPosition(null, adjustedTick, transitionLength, boneSnapshot,
+                    POINT, POINT, POINT);
+            boneAnimationQueue.addNextScale(null, adjustedTick, transitionLength, boneSnapshot,
+                    SCALE_POINT, SCALE_POINT, SCALE_POINT);
+        }
+    }
+}

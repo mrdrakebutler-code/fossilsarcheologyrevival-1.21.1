@@ -1,0 +1,33 @@
+{
+  "parent": "fossil:fossil/culture_vat",
+  "criteria": {
+    "requirement": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#fossil:all_eggs"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.fossil.dino_eggs.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "fossil:egg_item_triceratops"
+    },
+    "title": {
+      "translate": "advancements.fossil.dino_eggs.title"
+    }
+  },
+  "requirements": [
+    [
+      "requirement"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "W": {
+      "tag": "minecraft:wool"
+    },
+    "X": {
+      "item": "minecraft:oak_slab"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "WSW",
+    " X "
+  ],
+  "result": {
+    "count": 1,
+    "id": "fossil:toy_scratching_post_oak"
+  }
+}

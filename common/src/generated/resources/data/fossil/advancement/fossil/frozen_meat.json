@@ -1,0 +1,33 @@
+{
+  "parent": "fossil:fossil/break_fossil",
+  "criteria": {
+    "frozen_meat": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fossil:frozen_meat"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.fossil.frozen_meat.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "fossil:frozen_meat"
+    },
+    "title": {
+      "translate": "advancements.fossil.frozen_meat.title"
+    }
+  },
+  "requirements": [
+    [
+      "frozen_meat"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

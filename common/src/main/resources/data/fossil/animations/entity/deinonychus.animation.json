@@ -1,0 +1,70 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.deinonychus.attack": {
+      "animation_length": 1,
+      "action_delay": [
+        0.58
+      ]
+    },
+    "animation.deinonychus.call": {
+      "animation_length": 1
+    },
+    "animation.deinonychus.climb": {
+      "loop": true,
+      "animation_length": 2.5
+    },
+    "animation.deinonychus.display": {
+      "animation_length": 2
+    },
+    "animation.deinonychus.drink": {
+      "animation_length": 3
+    },
+    "animation.deinonychus.eat": {
+      "animation_length": 3
+    },
+    "animation.deinonychus.jump/fall": {
+      "loop": true,
+      "animation_length": 2
+    },
+    "animation.deinonychus.idle": {
+      "loop": true,
+      "animation_length": 12
+    },
+    "animation.deinonychus.latched": {
+      "loop": true,
+      "animation_length": 1.5625
+    },
+    "animation.deinonychus.leap": {
+      "loop": "hold_on_last_frame",
+      "animation_length": 0.6993,
+      "action_delay": [
+        0.35
+      ]
+    },
+    "animation.deinonychus.land": {
+      "animation_length": 1.1161
+    },
+    "animation.deinonychus.run": {
+      "loop": true,
+      "animation_length": 0.75
+    },
+    "animation.deinonychus.sit": {
+      "loop": true,
+      "animation_length": 6
+    },
+    "animation.deinonychus.sleep": {
+      "loop": true,
+      "animation_length": 12
+    },
+    "animation.deinonychus.swim": {
+      "loop": true,
+      "animation_length": 2
+    },
+    "animation.deinonychus.walk": {
+      "loop": true,
+      "animation_length": 1.4167
+    }
+  },
+  "geckolib_format_version": 2
+}

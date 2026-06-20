@@ -1,0 +1,51 @@
+architectury {
+    common enabled_platforms.split(',')
+}
+
+// PORT (Phase 2): optional-mod integrations are temporarily excluded from compilation. Their
+// host-mod APIs (REI/JEI/EMI/CarryOn/Farmers Delight) changed for 1.21.1 and their deps are
+// deferred. Re-include these in Phase 3 once each integration is ported. compat/geckolib is
+// a hard dependency (core animation) and stays IN.
+sourceSets {
+    main {
+        java {
+            exclude "**/compat/emi/**"
+            exclude "**/compat/jei/**"
+            exclude "**/compat/rei/**"
+            exclude "**/compat/carryon/**"
+            exclude "**/compat/farmers/**"
+        }
+    }
+}
+
+loom {
+    accessWidenerPath = file("src/main/resources/fossil.accesswidener")
+}
+
+dependencies {
+    mappings loom.layered() {
+        officialMojangMappings()
+        parchment("org.parchmentmc.data:parchment-$parchment_mc_version:$parchment_date@zip")
+    }
+    // We depend on Fabric Loader here to use the Fabric @Environment annotations,
+    // which get remapped to the correct annotations on each platform.
+    // Do NOT use other classes from Fabric Loader.
+    modImplementation "net.fabricmc:fabric-loader:$fabric_loader_version"
+    // Remove the next line if you don't want to depend on the API
+    modApi "dev.architectury:architectury:$architectury_version"
+
+    // GeckoLib publishes no -forge build for 1.21.1; compile the common module against the
+    // neoforge variant (API classes are identical). mclib is no longer a separate dep on 4.7.x.
+    modCompileOnly "software.bernie.geckolib:geckolib-neoforge-$minecraft_version:$gecko_lib_version"
+    // MoreHitboxes has no separate -common artifact we can resolve for 1.21.1; the Modrinth
+    // neoforge jar carries the com.github.darkpred.morehitboxes.api.* classes used by common.
+    modCompileOnly "maven.modrinth:more-hitboxes:$more_hitboxes_modrinth_id"
+    modCompileOnly "com.github.glitchfiend:TerraBlender-neoforge:$minecraft_version-$terra_blender_version"
+
+    //Optional — DEFERRED to Phase 3. These 1.20.1 versions (rei/jei/emi) don't exist for 1.21.1;
+    // their compat source in common will be handled alongside the platform compat port.
+    //modCompileOnly "me.shedaniel:RoughlyEnoughItems-api:$rei_version"
+    //modCompileOnly "me.shedaniel:RoughlyEnoughItems-default-plugin:$rei_version"
+    //modCompileOnly "mezz.jei:jei-$minecraft_version-common-api:$jei_version"
+    //modCompileOnly "dev.emi:emi-xplat-intermediary:$emi_version+$minecraft_version:api"
+}

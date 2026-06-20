@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "fossil:block/tempskya_log",
+    "side": "fossil:block/tempskya_log"
+  }
+}

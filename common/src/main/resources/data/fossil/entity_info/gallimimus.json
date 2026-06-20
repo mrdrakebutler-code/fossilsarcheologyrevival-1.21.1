@@ -1,0 +1,32 @@
+{
+  "ai": {
+    "activity": "DIURNAL",
+    "attacking": "BASIC",
+    "climbing": "NONE",
+    "moving": "WALK",
+    "response": "SCARED",
+    "taming": "FEEDING"
+  },
+  "attributes": {
+    "damageBase": 1.0,
+    "damageMax": 3.0,
+    "healthBase": 8.0,
+    "healthMax": 28.0,
+    "speedBase": 0.2,
+    "speedMax": 0.25,
+    "armorBase": 0.0,
+    "armorMax": 0.0,
+    "knockBackResistanceBase": 0.0,
+    "knockBackResistanceMax": 1.0
+  },
+  "adultAgeDays": 10,
+  "teenAgeDays": 4,
+  "breaksBlocks": false,
+  "canBeRidden": true,
+  "diet": "OMNIVORE",
+  "maxHunger": 100,
+  "maxPopulation": 15,
+  "eggScale": 0.6,
+  "scaleBase": 0.2,
+  "scaleMax": 1.2
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_meat_pteranodon": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fossil:meat_pteranodon"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "fossil:cooked_pteranodon_from_smoking"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_meat_pteranodon"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "fossil:cooked_pteranodon_from_smoking"
+    ]
+  }
+}

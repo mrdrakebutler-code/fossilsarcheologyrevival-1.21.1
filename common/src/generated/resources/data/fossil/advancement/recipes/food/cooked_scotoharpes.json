@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_meat_scotoharpes": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fossil:meat_scotoharpes"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "fossil:cooked_scotoharpes"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_meat_scotoharpes"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "fossil:cooked_scotoharpes"
+    ]
+  }
+}

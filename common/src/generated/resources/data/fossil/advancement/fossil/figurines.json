@@ -1,0 +1,33 @@
+{
+  "parent": "fossil:fossil/break_fossil",
+  "criteria": {
+    "requirement": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#fossil:figurines"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.fossil.figurines.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "fossil:figurine_steve_destroyed"
+    },
+    "title": {
+      "translate": "advancements.fossil.figurines.title"
+    }
+  },
+  "requirements": [
+    [
+      "requirement"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

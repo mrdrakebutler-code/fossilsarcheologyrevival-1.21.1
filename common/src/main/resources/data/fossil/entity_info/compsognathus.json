@@ -1,0 +1,33 @@
+{
+  "ai": {
+    "activity": "NOCTURNAL",
+    "attacking": "JUMP",
+    "climbing": "NONE",
+    "moving": "WALK",
+    "response": "CALM",
+    "taming": "FEEDING"
+  },
+  "attributes": {
+    "damageBase": 1.0,
+    "damageMax": 1.0,
+    "healthBase": 4.0,
+    "healthMax": 6.0,
+    "speedBase": 0.13,
+    "speedMax": 0.17,
+    "speedMod": 1.7,
+    "armorBase": 0.0,
+    "armorMax": 0.0,
+    "knockBackResistanceBase": 0.0,
+    "knockBackResistanceMax": 0.0
+  },
+  "adultAgeDays": 4,
+  "teenAgeDays": 2,
+  "breaksBlocks": false,
+  "canBeRidden": false,
+  "diet": "CARNIVORE",
+  "maxHunger": 50,
+  "maxPopulation": 5,
+  "eggScale": 0.2,
+  "scaleBase": 0.2,
+  "scaleMax": 0.6
+}

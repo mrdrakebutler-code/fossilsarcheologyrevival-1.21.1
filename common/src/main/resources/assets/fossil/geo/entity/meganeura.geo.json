@@ -1,0 +1,179 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.meganeura",
+				"texture_width": 128,
+				"texture_height": 64,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "pitch_root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "thorax",
+					"parent": "pitch_root",
+					"pivot": [0, 3.9, 0]
+				},
+				{
+					"name": "thoraxBreathing",
+					"parent": "thorax",
+					"pivot": [0, 3.9, 0],
+					"cubes": [
+						{"origin": [-2.5, 1.8, -7.1], "size": [5, 5, 8], "uv": [2, 0], "mirror": true}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "thorax",
+					"pivot": [0, 5.4, -8.1],
+					"rotation": [7.83, 0, 0],
+					"cubes": [
+						{"origin": [-3.5, 2.4, -11.1], "size": [7, 4, 4], "uv": [40, 0], "mirror": true}
+					]
+				},
+				{
+					"name": "mandibles",
+					"parent": "head",
+					"pivot": [0, 3.5, -10.5],
+					"rotation": [-26.09, 0, 0],
+					"cubes": [
+						{"origin": [-1.5, 1.5, -12], "size": [3, 3, 2], "uv": [40, 13], "mirror": true}
+					]
+				},
+				{
+					"name": "eat_pos",
+					"parent": "mandibles",
+					"pivot": [0, 3.5, -10.5]
+				},
+				{
+					"name": "antenneaL",
+					"parent": "head",
+					"pivot": [1, 4.9, -10.6],
+					"rotation": [-20.87, -15.65, 0],
+					"cubes": [
+						{"origin": [1, 4.4, -19.6], "size": [0, 1, 9], "uv": [42, 0], "mirror": true}
+					]
+				},
+				{
+					"name": "antenneaR",
+					"parent": "head",
+					"pivot": [-1, 4.9, -10.6],
+					"rotation": [-20.87, 15.65, 0],
+					"cubes": [
+						{"origin": [-1, 4.4, -19.6], "size": [0, 1, 9], "uv": [42, 0], "mirror": true}
+					]
+				},
+				{
+					"name": "wingL1",
+					"parent": "thorax",
+					"pivot": [2, 6.85, -4.6],
+					"cubes": [
+						{"origin": [2, 6.45, -5.6], "size": [28, 1, 9], "pivot": [2, 6.85, -4.6], "rotation": [0, 20, 0], "uv": [2, 54], "mirror": true}
+					]
+				},
+				{
+					"name": "wingL2",
+					"parent": "thorax",
+					"pivot": [2, 6.825, -0.6],
+					"cubes": [
+						{"origin": [2, 6.425, -1.6], "size": [28, 1, 9], "pivot": [2, 6.825, -0.6], "rotation": [0, -10, 0], "uv": [2, 41], "mirror": true}
+					]
+				},
+				{
+					"name": "wingR1",
+					"parent": "thorax",
+					"pivot": [-2, 6.85, -4.6],
+					"cubes": [
+						{"origin": [-30, 6.45, -5.6], "size": [28, 1, 9], "pivot": [-2, 6.85, -4.6], "rotation": [0, -20, 0], "uv": [2, 54]}
+					]
+				},
+				{
+					"name": "wingR2",
+					"parent": "thorax",
+					"pivot": [-2, 6.825, -0.6],
+					"cubes": [
+						{"origin": [-30, 6.425, -1.6], "size": [28, 1, 9], "pivot": [-2, 6.825, -0.6], "rotation": [0, 10, 0], "uv": [2, 41]}
+					]
+				},
+				{
+					"name": "leg1L",
+					"parent": "thorax",
+					"pivot": [2.5, 3.2, -5.1],
+					"rotation": [-77.5, -25, -5],
+					"cubes": [
+						{"origin": [2, -5.8, -5.1], "size": [1, 9, 2], "uv": [20, 26], "mirror": true}
+					]
+				},
+				{
+					"name": "leg2L",
+					"parent": "thorax",
+					"pivot": [2.5, 3.2, -2.7],
+					"rotation": [-75, -72.5, -5],
+					"cubes": [
+						{"origin": [2, -6.8, -2.7], "size": [1, 10, 2], "uv": [12, 26], "mirror": true}
+					]
+				},
+				{
+					"name": "leg3L",
+					"parent": "thorax",
+					"pivot": [2.5, 3.2, -0.1],
+					"rotation": [-80, -157.5, -5],
+					"cubes": [
+						{"origin": [2, -8.8, -0.1], "size": [1, 12, 2], "uv": [2, 34], "mirror": true}
+					]
+				},
+				{
+					"name": "leg1R",
+					"parent": "thorax",
+					"pivot": [-2.5, 3.2, -5.1],
+					"rotation": [-77.5, 25, 5],
+					"cubes": [
+						{"origin": [-3, -5.8, -5.1], "size": [1, 9, 2], "uv": [20, 26]}
+					]
+				},
+				{
+					"name": "leg2R",
+					"parent": "thorax",
+					"pivot": [-2.5, 3.2, -2.7],
+					"rotation": [-75, 72.5, 5],
+					"cubes": [
+						{"origin": [-3, -6.8, -2.7], "size": [1, 10, 2], "uv": [12, 26]}
+					]
+				},
+				{
+					"name": "leg3R",
+					"parent": "thorax",
+					"pivot": [-2.5, 3.2, -0.1],
+					"rotation": [-80, 157.5, 5],
+					"cubes": [
+						{"origin": [-3, -8.8, -0.1], "size": [1, 12, 2], "uv": [2, 34]}
+					]
+				},
+				{
+					"name": "tail1",
+					"parent": "thorax",
+					"pivot": [0, 3.9, 0],
+					"rotation": [-5.22, 0, 0],
+					"cubes": [
+						{"origin": [-2, 1.9, 0], "size": [4, 5, 20], "uv": [10, 0], "mirror": true}
+					]
+				},
+				{
+					"name": "tail2",
+					"parent": "tail1",
+					"pivot": [0, 3.9, 19.5],
+					"rotation": [-7.83, 0, 0],
+					"cubes": [
+						{"origin": [-2.5, 2.9, 19.5], "size": [5, 2, 6], "uv": [45, 27], "mirror": true}
+					]
+				}
+			]
+		}
+	]
+}

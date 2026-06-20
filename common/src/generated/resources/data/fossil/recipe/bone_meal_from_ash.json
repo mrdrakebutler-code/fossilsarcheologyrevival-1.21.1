@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "fossil:volcanic_ash"
+    },
+    {
+      "item": "fossil:volcanic_ash"
+    },
+    {
+      "item": "fossil:volcanic_ash"
+    },
+    {
+      "item": "fossil:volcanic_ash"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:bone_meal"
+  }
+}

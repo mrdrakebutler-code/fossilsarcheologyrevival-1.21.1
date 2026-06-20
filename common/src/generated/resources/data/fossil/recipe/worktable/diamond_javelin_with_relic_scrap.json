@@ -1,0 +1,13 @@
+{
+  "type": "fossil:worktable",
+  "fuel": {
+    "item": "fossil:relic_scrap"
+  },
+  "input": {
+    "item": "fossil:diamond_javelin"
+  },
+  "result": {
+    "count": 1,
+    "id": "fossil:diamond_javelin"
+  }
+}

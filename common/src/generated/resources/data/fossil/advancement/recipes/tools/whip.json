@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dinopedia": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fossil:dinopedia"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "fossil:whip"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_dinopedia"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "fossil:whip"
+    ]
+  }
+}

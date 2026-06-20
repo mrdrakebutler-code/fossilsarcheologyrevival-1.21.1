@@ -1,0 +1,22 @@
+{
+  "type": "fossil:analyzer",
+  "input": {
+    "item": "minecraft:beef"
+  },
+  "outputs": [
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:cow_dna"
+      },
+      "weight": 99.0
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:mooshroom_dna"
+      },
+      "weight": 1.0
+    }
+  ]
+}

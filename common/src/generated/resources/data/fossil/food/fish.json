@@ -1,0 +1,111 @@
+{
+  "blocks": [],
+  "entities": [
+    {
+      "entity": "betteranimalsplus:crab",
+      "value": 5
+    },
+    {
+      "entity": "betteranimalsplus:eel",
+      "value": 20
+    },
+    {
+      "entity": "betteranimalsplus:flying_fish",
+      "value": 5
+    },
+    {
+      "entity": "betteranimalsplus:horseshoecrab",
+      "value": 7
+    },
+    {
+      "entity": "betteranimalsplus:lamprey",
+      "value": 5
+    },
+    {
+      "entity": "betteranimalsplus:nautilus",
+      "value": 10
+    },
+    {
+      "entity": "betteranimalsplus:shark",
+      "value": 40
+    },
+    {
+      "entity": "betteranimalsplus:whale",
+      "value": 60
+    },
+    {
+      "entity": "minecraft:cod",
+      "value": 5
+    },
+    {
+      "entity": "minecraft:dolphin",
+      "value": 17
+    },
+    {
+      "entity": "minecraft:glow_squid",
+      "value": 20
+    },
+    {
+      "entity": "minecraft:guardian",
+      "value": 65
+    },
+    {
+      "entity": "minecraft:pufferfish",
+      "value": 5
+    },
+    {
+      "entity": "minecraft:salmon",
+      "value": 5
+    },
+    {
+      "entity": "minecraft:squid",
+      "value": 20
+    },
+    {
+      "entity": "minecraft:tropical_fish",
+      "value": 5
+    },
+    {
+      "entity": "minecraft:turtle",
+      "value": 5
+    },
+    {
+      "entity": "naturalist:bass",
+      "value": 10
+    },
+    {
+      "entity": "naturalist:catfish",
+      "value": 10
+    },
+    {
+      "entity": "naturalist:duck",
+      "value": 10
+    }
+  ],
+  "items": [
+    {
+      "tag": "c:foods/cooked_fish"
+    },
+    {
+      "tag": "c:foods/raw_fish"
+    },
+    {
+      "item": "minecraft:cod"
+    },
+    {
+      "item": "minecraft:cooked_cod"
+    },
+    {
+      "item": "minecraft:cooked_salmon"
+    },
+    {
+      "item": "minecraft:pufferfish"
+    },
+    {
+      "item": "minecraft:salmon"
+    },
+    {
+      "item": "minecraft:tropical_fish"
+    }
+  ]
+}

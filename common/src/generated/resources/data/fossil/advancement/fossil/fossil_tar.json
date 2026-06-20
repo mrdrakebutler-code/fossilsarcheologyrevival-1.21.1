@@ -1,0 +1,33 @@
+{
+  "parent": "fossil:fossil/tar_drop",
+  "criteria": {
+    "fossil_tar": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fossil:fossil_tar"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.fossil.fossil_tar.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "fossil:fossil_tar"
+    },
+    "title": {
+      "translate": "advancements.fossil.fossil_tar.title"
+    }
+  },
+  "requirements": [
+    [
+      "fossil_tar"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

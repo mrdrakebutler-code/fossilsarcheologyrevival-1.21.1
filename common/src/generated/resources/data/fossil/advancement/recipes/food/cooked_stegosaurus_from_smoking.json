@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_meat_stegosaurus": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fossil:meat_stegosaurus"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "fossil:cooked_stegosaurus_from_smoking"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_meat_stegosaurus"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "fossil:cooked_stegosaurus_from_smoking"
+    ]
+  }
+}

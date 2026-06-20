@@ -1,0 +1,37 @@
+{
+  "parent": "fossil:fossil/sarcophagus",
+  "criteria": {
+    "requirement": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "fossil:anu_boss"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.fossil.kill_anu.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "fossil:ancient_key"
+    },
+    "title": {
+      "translate": "advancements.fossil.kill_anu.title"
+    }
+  },
+  "requirements": [
+    [
+      "requirement"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

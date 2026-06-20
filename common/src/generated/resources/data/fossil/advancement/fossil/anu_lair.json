@@ -1,0 +1,29 @@
+{
+  "parent": "fossil:fossil/figurines",
+  "criteria": {
+    "requirement": {
+      "conditions": {
+        "to": "fossil:anu_lair"
+      },
+      "trigger": "minecraft:changed_dimension"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.fossil.anu_lair.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "fossil:anu_statue"
+    },
+    "title": {
+      "translate": "advancements.fossil.anu_lair.title"
+    }
+  },
+  "requirements": [
+    [
+      "requirement"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

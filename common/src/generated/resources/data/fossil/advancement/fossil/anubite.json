@@ -1,0 +1,37 @@
+{
+  "parent": "fossil:fossil/anu_lair",
+  "criteria": {
+    "requirement": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "fossil:anubite"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.fossil.anubite.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "fossil:anubite_statue"
+    },
+    "title": {
+      "translate": "advancements.fossil.anubite.title"
+    }
+  },
+  "requirements": [
+    [
+      "requirement"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

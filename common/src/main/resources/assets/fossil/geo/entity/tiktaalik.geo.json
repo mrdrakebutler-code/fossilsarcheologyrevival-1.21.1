@@ -1,0 +1,198 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.tiktaalik",
+				"texture_width": 64,
+				"texture_height": 32,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "pitch_root",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "bodyfront",
+					"parent": "pitch_root",
+					"pivot": [0, 4.1, -4.5],
+					"rotation": [-1.22, 0, 0],
+					"cubes": [
+						{"origin": [-3.5, 0.1, -13.5], "size": [7, 5, 15], "uv": [0, 12]}
+					]
+				},
+				{
+					"name": "bodyback",
+					"parent": "bodyfront",
+					"pivot": [0, 3.7, 1],
+					"cubes": [
+						{"origin": [-2.5, 0.7, 0.7], "size": [5, 4, 10], "uv": [33, 10]}
+					]
+				},
+				{
+					"name": "Tail",
+					"parent": "bodyback",
+					"pivot": [0, 2.9, 10.5],
+					"rotation": [1.22, 0, 0],
+					"cubes": [
+						{"origin": [-1.5, 1.4, 10.2], "size": [3, 3, 7], "uv": [43, 0]}
+					]
+				},
+				{
+					"name": "Tailfin",
+					"parent": "Tail",
+					"pivot": [0, 3.35, 17],
+					"cubes": [
+						{"origin": [0, 0.35, 17], "size": [0, 6, 7], "uv": [1, 13]}
+					]
+				},
+				{
+					"name": "Tailfindorsal",
+					"parent": "Tail",
+					"pivot": [0, 4.35, 13],
+					"cubes": [
+						{"origin": [0, 4.35, 13], "size": [0, 2, 4], "uv": [0, 10]}
+					]
+				},
+				{
+					"name": "Leftleg",
+					"parent": "bodyback",
+					"pivot": [-2.5, 1.8, 9.8],
+					"rotation": [-23.11, -15.81, 8.51],
+					"cubes": [
+						{"origin": [-2.5, 0.8, 9.6], "size": [1, 2, 3], "uv": [6, 14], "mirror": true}
+					]
+				},
+				{
+					"name": "Leftfoot",
+					"parent": "Leftleg",
+					"pivot": [-2.2, 1.8, 12.1],
+					"rotation": [8.51, 12.16, 0],
+					"cubes": [
+						{"origin": [-2.2, 0.8, 12.1], "size": [0, 2, 2], "uv": [59, 3], "mirror": true}
+					]
+				},
+				{
+					"name": "Rightleg",
+					"parent": "bodyback",
+					"pivot": [2.5, 1.8, 9.8],
+					"rotation": [-23.11, 15.81, -8.51],
+					"cubes": [
+						{"origin": [1.5, 0.8, 9.6], "size": [1, 2, 3], "uv": [39, 0], "mirror": true}
+					]
+				},
+				{
+					"name": "Rightfoot",
+					"parent": "Rightleg",
+					"pivot": [2.2, 1.8, 12.1],
+					"rotation": [8.51, -12.16, 0],
+					"cubes": [
+						{"origin": [2.2, 0.8, 12.1], "size": [0, 2, 2], "uv": [59, 0], "mirror": true}
+					]
+				},
+				{
+					"name": "Head",
+					"parent": "bodyfront",
+					"pivot": [0, 3.7, -13],
+					"rotation": [1.22, 0, 0],
+					"cubes": [
+						{"origin": [-4, 2.7, -16], "size": [8, 2, 4], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "Upperjaw",
+					"parent": "Head",
+					"pivot": [0, 3.7, -15.8],
+					"rotation": [-2.43, 0, 0],
+					"cubes": [
+						{"origin": [-3, 2.7, -20.8], "size": [6, 2, 5], "uv": [21, 3]}
+					]
+				},
+				{
+					"name": "Lowerjawback",
+					"parent": "Head",
+					"pivot": [0, 2.7, -12],
+					"cubes": [
+						{"origin": [-4, 0.7, -16], "size": [8, 2, 4], "uv": [0, 6]}
+					]
+				},
+				{
+					"name": "Lowerjawfront",
+					"parent": "Lowerjawback",
+					"pivot": [0, 1.7, -15.75],
+					"rotation": [-14.59, 0, 0],
+					"cubes": [
+						{"origin": [-2.5, 0.7, -20.75], "size": [5, 2, 5], "uv": [44, 25]}
+					]
+				},
+				{
+					"name": "eat_pos",
+					"parent": "Lowerjawfront",
+					"pivot": [0, 1.7, -16.75]
+				},
+				{
+					"name": "Lefteye",
+					"parent": "Head",
+					"pivot": [-0.8, 4.8, -13.5],
+					"rotation": [-24.32, 12.16, 0],
+					"cubes": [
+						{"origin": [-1.8, 2.8, -16.5], "size": [2, 2, 3], "uv": [29, 14], "mirror": true}
+					]
+				},
+				{
+					"name": "Righteye",
+					"parent": "Head",
+					"pivot": [0.8, 4.8, -13.5],
+					"rotation": [-24.32, -12.16, 0],
+					"cubes": [
+						{"origin": [-0.2, 2.8, -16.5], "size": [2, 2, 3], "uv": [54, 11], "mirror": true}
+					]
+				},
+				{
+					"name": "Leftarm",
+					"parent": "bodyfront",
+					"pivot": [-3, 1.6, -9.7],
+					"rotation": [-9.73, 40.14, -30.41],
+					"cubes": [
+						{"origin": [-5.5, 1.1, -10.7], "size": [3, 1, 2], "uv": [24, 0], "mirror": true}
+					]
+				},
+				{
+					"name": "Lefthand",
+					"parent": "Leftarm",
+					"pivot": [-5, 1.6, -9.7],
+					"rotation": [0, 0, 12.16],
+					"cubes": [
+						{"origin": [-8.7, 1.6, -11.2], "size": [4, 0, 3], "uv": [50, 16], "mirror": true}
+					]
+				},
+				{
+					"name": "Rightarm",
+					"parent": "bodyfront",
+					"pivot": [3, 1.6, -9.7],
+					"rotation": [-9.73, -40.14, 30.41],
+					"cubes": [
+						{"origin": [2.5, 1.1, -10.7], "size": [3, 1, 2], "uv": [29, 10], "mirror": true}
+					]
+				},
+				{
+					"name": "Righthand",
+					"parent": "Rightarm",
+					"pivot": [5, 1.6, -9.7],
+					"rotation": [0, 0, -12.16],
+					"cubes": [
+						{"origin": [4.7, 1.6, -11.2], "size": [4, 0, 3], "uv": [31, 24], "mirror": true}
+					]
+				},
+				{
+					"name": "rider_pos",
+					"parent": "bodyfront",
+					"pivot": [0, 5, -4]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,42 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.crassigyrinus.attack": {
+      "animation_length": 0.6667,
+      "action_delay": [
+        0.42
+      ]
+    },
+    "animation.crassigyrinus.burrowed": {
+      "loop": true,
+      "animation_length": 4
+    },
+    "animation.crassigyrinus.eat": {
+      "animation_length": 1.2917
+    },
+    "animation.crassigyrinus.idle/beached": {
+      "loop": true,
+      "animation_length": 4
+    },
+    "animation.crassigyrinus.idle_water": {
+      "loop": true,
+      "animation_length": 4
+    },
+    "animation.crassigyrinus.leaveground": {
+      "animation_length": 1
+    },
+    "animation.crassigyrinus.jump/fall": {
+      "loop": true,
+      "animation_length": 2
+    },
+    "animation.crassigyrinus.sleep/sit": {
+      "loop": true,
+      "animation_length": 4
+    },
+    "animation.crassigyrinus.swim": {
+      "loop": true,
+      "animation_length": 1
+    }
+  },
+  "geckolib_format_version": 2
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_meat_elasmotherium": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fossil:meat_elasmotherium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "fossil:cooked_elasmotherium"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_meat_elasmotherium"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "fossil:cooked_elasmotherium"
+    ]
+  }
+}

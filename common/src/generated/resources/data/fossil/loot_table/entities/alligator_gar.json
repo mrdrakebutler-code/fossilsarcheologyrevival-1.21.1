@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "entity": "this",
+              "function": "fossil:customize_to_dinosaur"
+            }
+          ],
+          "name": "fossil:meat_alligator_gar"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "fossil:entities/alligator_gar"
+}

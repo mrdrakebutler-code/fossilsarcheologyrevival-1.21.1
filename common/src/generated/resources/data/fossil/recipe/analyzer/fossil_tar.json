@@ -1,0 +1,183 @@
+{
+  "type": "fossil:analyzer",
+  "input": {
+    "item": "fossil:fossil_tar"
+  },
+  "outputs": [
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:axolotl_dna"
+      },
+      "weight": 1.0869565217391304
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:bat_dna"
+      },
+      "weight": 1.0869565217391304
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:bone_meal"
+      },
+      "weight": 15.0
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:camel_dna"
+      },
+      "weight": 1.086956521739129
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:cat_dna"
+      },
+      "weight": 1.086956521739129
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:dodo_dna"
+      },
+      "weight": 1.086956521739129
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:dolphin_dna"
+      },
+      "weight": 1.086956521739129
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:elasmotherium_dna"
+      },
+      "weight": 1.086956521739129
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:fox_dna"
+      },
+      "weight": 1.086956521739129
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:gastornis_dna"
+      },
+      "weight": 1.086956521739129
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:kelenken_dna"
+      },
+      "weight": 1.086956521739129
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:mammoth_dna"
+      },
+      "weight": 1.086956521739129
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:megalania_dna"
+      },
+      "weight": 1.086956521739129
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:megaloceros_dna"
+      },
+      "weight": 1.086956521739129
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:megalodon_dna"
+      },
+      "weight": 1.086956521739129
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:ocelot_dna"
+      },
+      "weight": 1.086956521739129
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:panda_dna"
+      },
+      "weight": 1.0869565217391326
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:phorusrhacos_dna"
+      },
+      "weight": 1.0869565217391326
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:platybelodon_dna"
+      },
+      "weight": 1.0869565217391326
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:quagga_dna"
+      },
+      "weight": 1.0869565217391326
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:smilodon_dna"
+      },
+      "weight": 1.0869565217391326
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:titanis_dna"
+      },
+      "weight": 1.0869565217391326
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:turtle_dna"
+      },
+      "weight": 1.0869565217391326
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:volcanic_rock"
+      },
+      "weight": 30.000000000000007
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:wolf_dna"
+      },
+      "weight": 1.0869565217391255
+    }
+  ]
+}

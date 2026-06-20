@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "fossil:meat_nautilus",
+          "weight": 95
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossil:magic_conch",
+          "weight": 5
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "fossil:entities/nautilus"
+}

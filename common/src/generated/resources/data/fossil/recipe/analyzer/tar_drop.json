@@ -1,0 +1,36 @@
+{
+  "type": "fossil:analyzer",
+  "input": {
+    "item": "fossil:tar_drop"
+  },
+  "outputs": [
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:charcoal"
+      },
+      "weight": 20.0
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:coal"
+      },
+      "weight": 20.0
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:fossil_tar"
+      },
+      "weight": 45.0
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:volcanic_rock"
+      },
+      "weight": 15.0
+    }
+  ]
+}

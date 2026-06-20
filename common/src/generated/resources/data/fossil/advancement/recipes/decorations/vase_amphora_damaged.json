@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pottery_shard": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fossil:pottery_shard"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "fossil:vase_amphora_damaged"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_pottery_shard"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "fossil:vase_amphora_damaged"
+    ]
+  }
+}

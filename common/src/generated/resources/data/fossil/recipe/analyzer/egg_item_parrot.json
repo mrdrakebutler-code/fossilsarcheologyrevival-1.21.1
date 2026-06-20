@@ -1,0 +1,15 @@
+{
+  "type": "fossil:analyzer",
+  "input": {
+    "item": "fossil:egg_item_parrot"
+  },
+  "outputs": [
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:parrot_dna"
+      },
+      "weight": 100.0
+    }
+  ]
+}

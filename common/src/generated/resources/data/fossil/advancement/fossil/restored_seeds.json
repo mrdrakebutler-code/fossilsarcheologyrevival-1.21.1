@@ -1,0 +1,33 @@
+{
+  "parent": "fossil:fossil/fossil_seeds",
+  "criteria": {
+    "requirement": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#fossil:restored_seeds"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.fossil.restored_seeds.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "fossil:fern_seed"
+    },
+    "title": {
+      "translate": "advancements.fossil.restored_seeds.title"
+    }
+  },
+  "requirements": [
+    [
+      "requirement"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

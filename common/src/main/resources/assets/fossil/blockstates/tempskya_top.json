@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "fossil:block/tempskya_top_empty"
+    },
+    "half=lower": {
+      "model": "fossil:block/tempskya_top"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "fossil:worktable",
+  "fuel": {
+    "item": "fossil:pottery_shard"
+  },
+  "input": {
+    "item": "fossil:figurine_steve_destroyed"
+  },
+  "result": {
+    "count": 1,
+    "id": "fossil:figurine_steve_restored"
+  }
+}

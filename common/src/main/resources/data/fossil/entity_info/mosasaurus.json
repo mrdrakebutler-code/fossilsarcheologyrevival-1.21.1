@@ -1,0 +1,31 @@
+{
+  "ai": {
+    "activity": "DIURNAL",
+    "attacking": "GRAB",
+    "climbing": "NONE",
+    "moving": "AQUATIC",
+    "response": "AGGRESSIVE",
+    "taming": "AQUATIC_GEM"
+  },
+  "attributes": {
+    "damageBase": 2.0,
+    "damageMax": 30.0,
+    "healthBase": 12.0,
+    "healthMax": 60.0,
+    "speedBase": 0.08,
+    "speedMax": 0.13,
+    "armorBase": 4.0,
+    "armorMax": 10.0,
+    "knockBackResistanceBase": 0.25,
+    "knockBackResistanceMax": 1.0
+  },
+  "adultAgeDays": 11,
+  "teenAgeDays": 5,
+  "breaksBlocks": true,
+  "canBeRidden": true,
+  "diet": "PISCI_CARNIVORE",
+  "maxHunger": 125,
+  "maxPopulation": 15,
+  "scaleBase": 0.6,
+  "scaleMax": 2.05
+}

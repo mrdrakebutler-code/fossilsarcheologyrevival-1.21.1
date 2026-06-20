@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=east,half=lower": {
+      "model": "fossil:block/vases/vase_amphora_damaged_base",
+      "y": 90
+    },
+    "facing=east,half=upper": {
+      "model": "fossil:block/vases/vase_amphora_damaged_top",
+      "y": 90
+    },
+    "facing=north,half=lower": {
+      "model": "fossil:block/vases/vase_amphora_damaged_base"
+    },
+    "facing=north,half=upper": {
+      "model": "fossil:block/vases/vase_amphora_damaged_top"
+    },
+    "facing=south,half=lower": {
+      "model": "fossil:block/vases/vase_amphora_damaged_base",
+      "y": 180
+    },
+    "facing=south,half=upper": {
+      "model": "fossil:block/vases/vase_amphora_damaged_top",
+      "y": 180
+    },
+    "facing=west,half=lower": {
+      "model": "fossil:block/vases/vase_amphora_damaged_base",
+      "y": 270
+    },
+    "facing=west,half=upper": {
+      "model": "fossil:block/vases/vase_amphora_damaged_top",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "minecraft:acacia_log"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "S",
+    "S",
+    "L"
+  ],
+  "result": {
+    "count": 1,
+    "id": "fossil:toy_tethered_log_acacia"
+  }
+}

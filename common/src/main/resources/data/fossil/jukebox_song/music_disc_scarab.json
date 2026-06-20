@@ -1,0 +1,8 @@
+{
+  "comparator_output": 2,
+  "description": {
+    "translate": "jukebox_song.fossil.scarab"
+  },
+  "length_in_seconds": 153.0,
+  "sound_event": "fossil:music_scarab"
+}

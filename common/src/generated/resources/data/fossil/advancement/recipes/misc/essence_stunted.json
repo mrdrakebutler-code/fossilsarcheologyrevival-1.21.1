@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chicken_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fossil:essence_chicken"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "fossil:essence_stunted"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_chicken_essence"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "fossil:essence_stunted"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 1.5,
+  "ingredient": {
+    "item": "fossil:meat_spinosaurus"
+  },
+  "result": {
+    "count": 1,
+    "id": "fossil:cooked_spinosaurus"
+  }
+}

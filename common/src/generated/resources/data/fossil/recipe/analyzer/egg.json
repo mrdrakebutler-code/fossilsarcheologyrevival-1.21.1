@@ -1,0 +1,19 @@
+{
+  "type": "fossil:analyzer",
+  "input": {
+    "item": "minecraft:egg"
+  },
+  "outputs": [
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:chicken_dna"
+      },
+      "weight": 25.0
+    },
+    {
+      "item": {},
+      "weight": 75.0
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "animations": {
+    "animation.therizinosaurus.walk": {
+      "blocks_per_second": 0.7
+    },
+    "animation.therizinosaurus.run": {
+      "blocks_per_second": 1.5
+    },
+    "animation.therizinosaurus.run_baby": {
+      "blocks_per_second": 4
+    }
+  }
+}

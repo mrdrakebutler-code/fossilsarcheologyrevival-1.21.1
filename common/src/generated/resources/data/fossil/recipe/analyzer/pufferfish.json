@@ -1,0 +1,22 @@
+{
+  "type": "fossil:analyzer",
+  "input": {
+    "item": "minecraft:pufferfish"
+  },
+  "outputs": [
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:polar_bear_dna"
+      },
+      "weight": 10.0
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:pufferfish_dna"
+      },
+      "weight": 90.0
+    }
+  ]
+}

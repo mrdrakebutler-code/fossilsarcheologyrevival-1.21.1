@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "minecraft:bone"
+    },
+    "R": {
+      "tag": "fossil:bones_ribcage"
+    },
+    "V": {
+      "tag": "fossil:bones_vertebrae"
+    }
+  },
+  "pattern": [
+    "B B",
+    " V ",
+    "BRB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "fossil:bone_chestplate"
+  }
+}

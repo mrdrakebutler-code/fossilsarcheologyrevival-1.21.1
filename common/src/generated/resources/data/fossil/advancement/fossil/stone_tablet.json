@@ -1,0 +1,33 @@
+{
+  "parent": "fossil:fossil/analyzer",
+  "criteria": {
+    "stone_tablet": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fossil:stone_tablet"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.fossil.stone_tablet.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "fossil:stone_tablet"
+    },
+    "title": {
+      "translate": "advancements.fossil.stone_tablet.title"
+    }
+  },
+  "requirements": [
+    [
+      "stone_tablet"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

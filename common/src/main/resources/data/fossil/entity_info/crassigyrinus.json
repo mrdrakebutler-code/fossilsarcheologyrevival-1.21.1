@@ -1,0 +1,31 @@
+{
+  "ai": {
+    "activity": "NOCTURNAL",
+    "attacking": "BASIC",
+    "climbing": "NONE",
+    "moving": "AQUATIC",
+    "response": "WATER_AGGRESSIVE",
+    "taming": "FEEDING"
+  },
+  "attributes": {
+    "damageBase": 0.5,
+    "damageMax": 2.0,
+    "healthBase": 4.0,
+    "healthMax": 14.0,
+    "speedBase": 0.08,
+    "speedMax": 0.13,
+    "armorBase": 1.0,
+    "armorMax": 2.0,
+    "knockBackResistanceBase": 0.0,
+    "knockBackResistanceMax": 0.0
+  },
+  "adultAgeDays": 6,
+  "teenAgeDays": 3,
+  "breaksBlocks": false,
+  "canBeRidden": false,
+  "diet": "PISCIVORE",
+  "maxHunger": 70,
+  "maxPopulation": 15,
+  "scaleBase": 0.35,
+  "scaleMax": 0.78
+}

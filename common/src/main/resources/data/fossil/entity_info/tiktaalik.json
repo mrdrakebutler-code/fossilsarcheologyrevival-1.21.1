@@ -1,0 +1,33 @@
+{
+  "ai": {
+    "activity": "DIURNAL",
+    "attacking": "BASIC",
+    "climbing": "NONE",
+    "moving": "SEMI_AQUATIC",
+    "response": "TERRITORIAL",
+    "taming": "FEEDING"
+  },
+  "attributes": {
+    "damageBase": 0.0,
+    "damageMax": 3.0,
+    "healthBase": 5.0,
+    "healthMax": 14.0,
+    "speedBase": 0.1,
+    "speedMax": 0.15,
+    "swimSpeedBase": 0.07,
+    "swimSpeedMax": 0.1,
+    "armorBase": 1.0,
+    "armorMax": 2.0,
+    "knockBackResistanceBase": 0.0,
+    "knockBackResistanceMax": 0.0
+  },
+  "adultAgeDays": 5,
+  "teenAgeDays": 3,
+  "breaksBlocks": false,
+  "canBeRidden": false,
+  "diet": "PISCI_CARNIVORE",
+  "maxHunger": 70,
+  "maxPopulation": 15,
+  "scaleBase": 0.2,
+  "scaleMax": 0.75
+}

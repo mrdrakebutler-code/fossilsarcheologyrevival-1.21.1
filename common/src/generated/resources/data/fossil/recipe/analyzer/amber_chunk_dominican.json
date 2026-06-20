@@ -1,0 +1,99 @@
+{
+  "type": "fossil:analyzer",
+  "input": {
+    "item": "fossil:amber_chunk_dominican"
+  },
+  "outputs": [
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:beetroot_seeds"
+      },
+      "weight": 1.0
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:dirt"
+      },
+      "weight": 25.0
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:fossil_sapling_calamites"
+      },
+      "weight": 1.0
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:fossil_sapling_cordaites"
+      },
+      "weight": 1.0
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:fossil_sapling_palm"
+      },
+      "weight": 1.0
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:fossil_sapling_sigillaria"
+      },
+      "weight": 1.0
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "fossil:fossil_sapling_tempskya"
+      },
+      "weight": 1.0
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:gravel"
+      },
+      "weight": 25.0
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:melon_seeds"
+      },
+      "weight": 1.0
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:pumpkin_seeds"
+      },
+      "weight": 1.0
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:spider_eye"
+      },
+      "weight": 9.0
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:string"
+      },
+      "weight": 10.0
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:wheat_seeds"
+      },
+      "weight": 1.0
+    }
+  ]
+}

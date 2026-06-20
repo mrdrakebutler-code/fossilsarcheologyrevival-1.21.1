@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "tag": "fossil:cookable_eggs"
+  },
+  "result": {
+    "id": "farmersdelight:fried_egg"
+  },
+  "experience": 1.5,
+  "cookingtime": 200,
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:any_mod_loaded",
+      "values": [
+        "farmersdelight"
+      ]
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "modid": "farmersdelight",
+      "type": "neoforge:mod_loaded"
+    }
+  ]
+}

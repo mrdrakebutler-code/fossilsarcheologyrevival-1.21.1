@@ -1,0 +1,90 @@
+plugins {
+    id "com.github.johnrengelman.shadow"
+}
+
+architectury {
+    platformSetupLoomIde()
+    neoForge()
+}
+
+// PORT: optional-mod integrations and gametests are temporarily excluded from compilation.
+// compat/** host-mod APIs (REI/JEI/EMI/Jade/Farmers Delight/Alex's Mobs) changed for 1.21.1
+// and their deps are deferred; tests/** are gametest helpers. Re-include each once ported.
+// data/** (datagen) is being ported in Phase 4 Part B — no longer excluded.
+sourceSets {
+    main {
+        java {
+            exclude "**/compat/**"
+            exclude "**/tests/**"
+        }
+    }
+}
+
+configurations {
+    common {
+        canBeResolved = true
+        canBeConsumed = false
+    }
+    compileClasspath.extendsFrom common
+    runtimeClasspath.extendsFrom common
+    developmentNeoForge.extendsFrom common
+
+    // Files in this configuration will be bundled into the mod using the Shadow plugin.
+    shadowBundle {
+        canBeResolved = true
+        canBeConsumed = false
+    }
+}
+
+dependencies {
+    mappings loom.layered() {
+        officialMojangMappings() {
+            nameSyntheticMembers = true
+        }
+        parchment("org.parchmentmc.data:parchment-$parchment_mc_version:$parchment_date@zip")
+    }
+    neoForge "net.neoforged:neoforge:$neoforge_version"
+    modApi "dev.architectury:architectury-neoforge:$architectury_version"
+
+    common(project(path: ":common", configuration: "namedElements")) { transitive false }
+    shadowBundle project(path: ':common', configuration: 'transformProductionNeoForge')
+
+    // Hard dependencies (verified 1.21.1 NeoForge — see ../PORT-VERSIONS.md)
+    modImplementation "software.bernie.geckolib:geckolib-neoforge-$minecraft_version:$gecko_lib_version"
+    modImplementation "com.github.glitchfiend:TerraBlender-neoforge:$minecraft_version-$terra_blender_version"
+    modImplementation "maven.modrinth:more-hitboxes:$more_hitboxes_modrinth_id"
+
+    // MixinExtras is BUNDLED by NeoForge 21.1.x — compile-time only; do NOT shade/include at runtime.
+    compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.4.1"))
+
+    // --- Optional integrations (REI / EMI / JEI / Jade / Create / Farmers Delight & addons / Alex's Mobs /
+    //     Prehistoric Fauna) are DEFERRED to Phase 3. Their 1.21.1 NeoForge coordinates differ from the
+    //     1.20.1 Forge ones and must each be re-resolved before re-adding. See forge/build.gradle for the
+    //     original list. ---
+}
+
+loom {
+    accessWidenerPath = project(":common").loom.accessWidenerPath
+
+    runs {
+        data {
+            data()
+            programArgs "--all", "--mod", "$mod_id"
+            programArgs "--output", project(":common").file("src/generated/resources/").absolutePath
+            programArgs "--existing", project(":common").file("src/main/resources/").absolutePath
+        }
+    }
+    // NeoForge specifics:
+    //  - Mixins are declared in META-INF/neoforge.mods.toml ([[mixins]]), not via loom.mixinConfig.
+    //  - The common access widener is auto-converted to an access transformer by loom.
+}
+
+shadowJar {
+    configurations = [project.configurations.shadowBundle]
+    archiveClassifier = 'dev-shadow'
+}
+
+remapJar {
+    inputFile.set shadowJar.archiveFile
+    archiveAppendix = "neoforge-$minecraft_version"
+}

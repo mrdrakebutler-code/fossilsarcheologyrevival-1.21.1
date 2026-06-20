@@ -1,0 +1,31 @@
+{
+  "ai": {
+    "activity": "DIURNAL",
+    "attacking": "BASIC",
+    "climbing": "NONE",
+    "moving": "WALK",
+    "response": "TERRITORIAL",
+    "taming": "FEEDING"
+  },
+  "attributes": {
+    "damageBase": 1.0,
+    "damageMax": 8.0,
+    "healthBase": 8.0,
+    "healthMax": 30.0,
+    "speedBase": 0.15,
+    "speedMax": 0.2,
+    "armorBase": 0.0,
+    "armorMax": 4.0,
+    "knockBackResistanceBase": 0.0,
+    "knockBackResistanceMax": 0.75
+  },
+  "adultAgeDays": 8,
+  "teenAgeDays": 2,
+  "breaksBlocks": false,
+  "canBeRidden": false,
+  "diet": "PISCI_CARNIVORE",
+  "maxHunger": 80,
+  "maxPopulation": 15,
+  "scaleBase": 0.4,
+  "scaleMax": 1.3
+}

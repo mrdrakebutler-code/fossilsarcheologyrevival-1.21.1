@@ -1,0 +1,46 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.psittacosaurus.attack": {
+      "animation_length": 1,
+      "action_delay": [
+        0.58
+      ]
+    },
+    "animation.psittacosaurus.drink": {
+      "animation_length": 3
+    },
+    "animation.psittacosaurus.eat": {
+      "animation_length": 3
+    },
+    "animation.psittacosaurus.jump/fall": {
+      "loop": true,
+      "animation_length": 2
+    },
+    "animation.psittacosaurus.idle": {
+      "loop": true,
+      "animation_length": 5.7143
+    },
+    "animation.psittacosaurus.run": {
+      "loop": true,
+      "animation_length": 0.75
+    },
+    "animation.psittacosaurus.sit": {
+      "loop": true,
+      "animation_length": 12
+    },
+    "animation.psittacosaurus.sleep": {
+      "loop": true,
+      "animation_length": 6
+    },
+    "animation.psittacosaurus.swim": {
+      "loop": true,
+      "animation_length": 2
+    },
+    "animation.psittacosaurus.walk": {
+      "loop": true,
+      "animation_length": 1.4167
+    }
+  },
+  "geckolib_format_version": 2
+}

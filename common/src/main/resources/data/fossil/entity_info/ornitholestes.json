@@ -1,0 +1,32 @@
+{
+  "ai": {
+    "activity": "NOCTURNAL",
+    "attacking": "CHARGE",
+    "climbing": "NONE",
+    "moving": "WALK",
+    "response": "TERRITORIAL",
+    "taming": "IMPRINTING"
+  },
+  "attributes": {
+    "damageBase": 1.0,
+    "damageMax": 3.0,
+    "healthBase": 5.0,
+    "healthMax": 12.0,
+    "speedBase": 0.15,
+    "speedMax": 0.2,
+    "armorBase": 0.0,
+    "armorMax": 0.0,
+    "knockBackResistanceBase": 0.0,
+    "knockBackResistanceMax": 0.0
+  },
+  "adultAgeDays": 6,
+  "teenAgeDays": 3,
+  "breaksBlocks": false,
+  "canBeRidden": false,
+  "diet": "CARNIVORE_EGG",
+  "maxHunger": 100,
+  "maxPopulation": 10,
+  "eggScale": 0.5,
+  "scaleBase": 0.18,
+  "scaleMax": 0.3
+}

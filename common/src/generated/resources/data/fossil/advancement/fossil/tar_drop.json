@@ -1,0 +1,33 @@
+{
+  "parent": "fossil:fossil/break_fossil",
+  "criteria": {
+    "tar_drop": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fossil:tar_drop"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.fossil.tar_drop.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "fossil:tar_drop"
+    },
+    "title": {
+      "translate": "advancements.fossil.tar_drop.title"
+    }
+  },
+  "requirements": [
+    [
+      "tar_drop"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

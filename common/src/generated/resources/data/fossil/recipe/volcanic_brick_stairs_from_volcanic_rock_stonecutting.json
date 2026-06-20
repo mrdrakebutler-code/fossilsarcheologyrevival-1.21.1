@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "fossil:volcanic_rock"
+  },
+  "result": {
+    "count": 1,
+    "id": "fossil:volcanic_brick_stairs"
+  }
+}

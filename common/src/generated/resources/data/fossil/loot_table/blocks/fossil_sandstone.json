@@ -1,0 +1,175 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "predicates": {
+                      "minecraft:enchantments": [
+                        {
+                          "enchantments": "minecraft:silk_touch",
+                          "levels": {
+                            "min": 1
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
+              "name": "fossil:fossil_sandstone"
+            },
+            {
+              "type": "minecraft:alternatives",
+              "children": [
+                {
+                  "type": "minecraft:loot_table",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "fossil:archeology",
+                              "levels": 1
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ],
+                  "value": "fossil:regular_fossil_arch_1"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "fossil:archeology",
+                              "levels": 2
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ],
+                  "value": "fossil:regular_fossil_arch_2"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "fossil:archeology",
+                              "levels": 3
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ],
+                  "value": "fossil:regular_fossil_arch_3"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "fossil:paleontology",
+                              "levels": 1
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ],
+                  "value": "fossil:regular_fossil_paleo_1"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "fossil:paleontology",
+                              "levels": 2
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ],
+                  "value": "fossil:regular_fossil_paleo_2"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "fossil:paleontology",
+                              "levels": 3
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ],
+                  "value": "fossil:regular_fossil_paleo_3"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil:regular_fossil"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:survives_explosion"
+                },
+                {
+                  "condition": "minecraft:survives_explosion"
+                },
+                {
+                  "condition": "minecraft:survives_explosion"
+                },
+                {
+                  "condition": "minecraft:survives_explosion"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "fossil:blocks/fossil_sandstone"
+}

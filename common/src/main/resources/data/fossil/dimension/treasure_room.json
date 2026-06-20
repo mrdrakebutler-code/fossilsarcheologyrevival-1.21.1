@@ -1,0 +1,10 @@
+{
+  "type": "fossil:treasure_room",
+  "generator": {
+    "type": "fossil:treasure_room",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "fossil:treasure_room"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "minecraft:dark_oak_log"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "S",
+    "S",
+    "L"
+  ],
+  "result": {
+    "count": 1,
+    "id": "fossil:toy_tethered_log_dark_oak"
+  }
+}
