@@ -1,8 +1,15 @@
-> [!NOTE]
-> **This is a testing copy.** It is an in-progress, unofficial attempt to port
-> Fossils & Archeology: Revival to **Minecraft 1.21.1**. It is experimental, not
-> affiliated with or endorsed by the upstream Fossils & Archeology team, and is
-> not a stable release. Expect bugs and breaking changes.
+> [!WARNING]
+> **This is a 100% AI-generated port ("slop port").** This is an unofficial,
+> in-progress attempt to port Fossils & Archeology: Revival to
+> **Minecraft 1.21.1**, produced with heavy use of AI coding tools rather than
+> hand-written by the original team. It is experimental, not affiliated with
+> or endorsed by the upstream Fossils & Archeology team, and is not a stable
+> release. Expect bugs, breaking changes, and AI-generated weirdness.
+>
+> It was thrown together just to play with friends while waiting for the
+> official mod to be updated to modern Minecraft versions. **If you want a
+> proper, supported experience, please wait for and use the official
+> Fossils & Archeology: Revival release instead of this port.**
 
 <p align="center">
     <img src="https://i.imgur.com/G18YFWC.jpeg" alt="Banner"/>
