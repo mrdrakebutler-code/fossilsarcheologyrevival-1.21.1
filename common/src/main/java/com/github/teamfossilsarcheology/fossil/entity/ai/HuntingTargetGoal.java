@@ -112,8 +112,15 @@ public class HuntingTargetGoal extends TargetGoal {
             }
         }
         boolean isFood = FoodMappings.getMobFoodPoints(target, dino.data().diet()) > 0;
-        boolean smallEnough = dino.getBoundingBox().getSize() * dino.getTargetScale() >= target.getBoundingBox().getSize();
-        //System.out.println(dino.info().name() + " " + target.getType().getDescriptionId() + " " + isFood + " " + smallEnough);
+
+        // Compare a linear size value instead of raw bounding-box volume.
+        // Using AABB.getSize() directly penalizes long/tall species disproportionately
+        // and can prevent legitimate predator/prey pairs such as T. rex -> Triceratops
+        // and Deinonychus -> Quetzalcoatlus from ever becoming targets.
+        double dinoSize = Math.cbrt(dino.getBoundingBox().getSize()) * dino.getTargetScale();
+        double targetSize = Math.cbrt(target.getBoundingBox().getSize());
+        boolean smallEnough = dinoSize >= targetSize;
+
         return canTarget && isFood && smallEnough && !target.getClass().equals(dino.getClass());
     }
 
