@@ -9,9 +9,6 @@ import it.unimi.dsi.fastutil.Pair;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ItemParticleOption;
-import net.minecraft.core.particles.ParticleOptions;
-import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.util.Mth;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.item.Item;
@@ -22,6 +19,9 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.util.Mth;
+import net.minecraft.core.particles.ParticleOptions;
+import net.minecraft.core.particles.ParticleTypes;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
@@ -73,7 +73,20 @@ public class Util {
     }
 
     public static boolean canReachPrey(Prehistoric prehistoric, Entity target) {
-        return prehistoric.getEntityHitboxData().getAttackBounds().intersects(target.getBoundingBox()) && prehistoric.getSensing().hasLineOfSight(target);
+        if (!prehistoric.getSensing().hasLineOfSight(target)) {
+            return false;
+        }
+
+        // Prefer the dinosaur's custom attack bounds, but fall back to ordinary
+        // entity-body overlap. Some large multipart dinosaurs can visually make
+        // contact while their custom attack box does not intersect the target.
+        AABB targetBox = target.getBoundingBox();
+        AABB attackBounds = prehistoric.getEntityHitboxData().getAttackBounds();
+        if (attackBounds.intersects(targetBox)) {
+            return true;
+        }
+
+        return prehistoric.getBoundingBox().inflate(1.0D, 0.5D, 1.0D).intersects(targetBox);
     }
 
     public static boolean canSeeFood(Prehistoric dino, BlockPos position) {
@@ -92,7 +105,6 @@ public class Util {
      * with speed values ranging from ~0.08 to ~0.25. Formula is based on sample data
      */
     public static double attributeToSpeed(double speed) {
-        //Same-ish values but probably less performance: 42.42624 * Math.pow(speed, 1.98832);
         return 44.23174 * Mth.square(speed) - 0.504912 * speed + 0.0592455;
     }
 
@@ -108,36 +120,24 @@ public class Util {
         double newSpeed = baseSpeed;
         boolean minAbove1 = data.minScale() >= 1;
         boolean maxBelow1 = data.maxScale() <= 1;
-        //baseSpeed is for scale=1
         if (scale < 1) {
             float min = data.minScale();
             float max = maxBelow1 ? data.maxScale() : 1;
             if (min != max) {
-                //Sets maxSpeed as upper limit if maxScale is below 1
                 newSpeed = Mth.lerp((scale - min) / (max - min), minSpeed, maxBelow1 ? maxSpeed : baseSpeed);
             }
         } else {
             float min = data.minScale() < 1 ? 1 : data.minScale();
             float max = data.maxScale();
             if (max != min) {
-                //Sets minSpeed as lower limit if minScale is above 1
                 newSpeed = Mth.lerp((scale - min) / (max - min), minAbove1 ? minSpeed : baseSpeed, maxSpeed);
             } else {
-                //scale == maxScale == 1
                 newSpeed = maxSpeed;
             }
         }
         return newSpeed;
     }
 
-    /**
-     * Returns the nearest visible entity of a given class
-     *
-     * @param entityClazz the class to search for
-     * @param attacker    the mob to search around
-     * @param searchArea  the area to search in
-     * @param predicate   additional tests
-     */
     @Nullable
     public static <T extends Entity> T getNearestEntity(Class<? extends T> entityClazz, Mob attacker, AABB searchArea, Predicate<T> predicate) {
         List<? extends T> entities = attacker.level().getEntitiesOfClass(entityClazz, searchArea, entity -> true);
@@ -153,28 +153,18 @@ public class Util {
         return target;
     }
 
-    /**
-     * Rotates and wraps a given y rotation(0° pos Z, -90° pos X, 90° neg X, 180/-180° neg Z) 90° clockwise (90° pos Z, 0° pos X, 180/-180° neg X, -90 neg Z).
-     */
     public static float yRotToYaw(double yRot) {
         return (float) Mth.wrapDegrees(yRot + 90);
     }
 
-    /**
-     * Rotates and wraps a given yaw rotation(90° pos Z, 0° pos X, 180/-180° neg X, -90 neg Z) 90° counter-clockwise (0° pos Z, -90° pos X, 90° neg X, 180/-180° neg Z)
-     */
     public static float yawToYRot(double yaw) {
         return (float) Mth.wrapDegrees(yaw - 90);
     }
 
     public static float clampTo360(double x) {
-        //x mod y behaving the same way as Math.floorMod but with doubles
         return (float) (x - Math.floor(x / 360) * 360);
     }
 
-    /**
-     * Returns the directional vector from start to end
-     */
     public static Vec3 directionVecTo(Entity start, Entity end) {
         return end.position().subtract(start.position());
     }
@@ -183,11 +173,7 @@ public class Util {
         return target.getDeltaMovement().length() > 0.2 && target.getDeltaMovement().dot(directionVecTo(start, target)) > 0;
     }
 
-    /**
-     * Returns the side of the given aabb closest to the edge of the block position
-     */
     public static Pair<Direction, Double> getClosestSide(AABB bounding, BlockPos blockPos) {
-        //I'm sure there is a smarter way to do this but this is simple enough
         AABB aabb = bounding.move(Vec3.atBottomCenterOf(blockPos).scale(-1));
         double maxX = Math.abs(Math.abs(aabb.maxX) - 0.5);
         double minZ = Math.abs(Math.abs(aabb.minZ) - 0.5);
